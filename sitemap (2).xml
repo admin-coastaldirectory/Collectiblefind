@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- ══════════════════════════════════════════════════════════════
+       CollectibleFind Sitemap — collectiblefind.com
+       The #1 Collectibles Influencer & Creator Directory
+       ══════════════════════════════════════════════════════════════ -->
+
+  <!-- HOMEPAGE / DIRECTORY -->
+  <url>
+    <loc>https://collectiblefind.com/</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- CATEGORY HUBS PAGE -->
+  <url>
+    <loc>https://collectiblefind.com/#hubs</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- RESOURCES PAGE -->
+  <url>
+    <loc>https://collectiblefind.com/#resources</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- BLOG PAGE -->
+  <url>
+    <loc>https://collectiblefind.com/#blog</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ABOUT PAGE -->
+  <url>
+    <loc>https://collectiblefind.com/about</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- GET LISTED / SUBMIT PAGE -->
+  <url>
+    <loc>https://collectiblefind.com/submit</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ADVERTISE PAGE -->
+  <url>
+    <loc>https://collectiblefind.com/advertise</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- CONTACT PAGE -->
+  <url>
+    <loc>https://collectiblefind.com/contact</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       CATEGORY DIRECTORY PAGES
+       ══════════════════════════════════════════════════════════════ -->
+
+  <!-- Sports Cards -->
+  <url>
+    <loc>https://collectiblefind.com/#directory?category=sports-cards</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Trading Cards & TCG (Pokémon, MTG, Yu-Gi-Oh!) -->
+  <url>
+    <loc>https://collectiblefind.com/#directory?category=trading-cards</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Coins & Currency -->
+  <url>
+    <loc>https://collectiblefind.com/#directory?category=coins</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Stamps & Philately -->
+  <url>
+    <loc>https://collectiblefind.com/#directory?category=stamps</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Toys & Figurines -->
+  <url>
+    <loc>https://collectiblefind.com/#directory?category=toys</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Comics & Books -->
+  <url>
+    <loc>https://collectiblefind.com/#directory?category=comics</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Sports Memorabilia -->
+  <url>
+    <loc>https://collectiblefind.com/#directory?category=sports-memorabilia</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Hollywood Memorabilia -->
+  <url>
+    <loc>https://collectiblefind.com/#directory?category=hollywood-memorabilia</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Vintage & Antiques -->
+  <url>
+    <loc>https://collectiblefind.com/#directory?category=vintage</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Sneakers & Streetwear -->
+  <url>
+    <loc>https://collectiblefind.com/#directory?category=sneakers</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Art & Antiques -->
+  <url>
+    <loc>https://collectiblefind.com/#directory?category=art-antiques</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Military & Historical -->
+  <url>
+    <loc>https://collectiblefind.com/#directory?category=military-historical</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Jewelry & Watches -->
+  <url>
+    <loc>https://collectiblefind.com/#directory?category=jewelry-watches</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Paper Ephemera -->
+  <url>
+    <loc>https://collectiblefind.com/#directory?category=paper-ephemera</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Niche & Emerging -->
+  <url>
+    <loc>https://collectiblefind.com/#directory?category=niche-emerging</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       CATEGORY HUB PAGES
+       ══════════════════════════════════════════════════════════════ -->
+
+  <url>
+    <loc>https://collectiblefind.com/#hub?category=sports-cards</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://collectiblefind.com/#hub?category=trading-cards</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://collectiblefind.com/#hub?category=coins</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://collectiblefind.com/#hub?category=stamps</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://collectiblefind.com/#hub?category=toys</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://collectiblefind.com/#hub?category=comics</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://collectiblefind.com/#hub?category=vintage</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://collectiblefind.com/#hub?category=sports-memorabilia</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://collectiblefind.com/#hub?category=sneakers</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- LEGAL PAGES -->
+  <url>
+    <loc>https://collectiblefind.com/privacy</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://collectiblefind.com/terms</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://collectiblefind.com/ftc</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>
