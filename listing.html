@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="page-title">Creator Profile | CollectibleFind</title>
+<meta name="description" id="page-desc" content="View this collectibles creator's profile on CollectibleFind — platforms, bio, and links.">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0a1628;--navy-mid:#112240;--navy-light:#1a3a6e;--gold:#c9a84c;--gold-light:#e8c96d;--gold-pale:#fdf6e3;--white:#fff;--off-white:#f7f8fa;--border:#e2e6ed;--text:#0d1b2a;--text-mid:#4a5568;--text-muted:#8896a5}
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Inter',sans-serif;background:var(--off-white);color:var(--text);font-size:14px}a{color:inherit;text-decoration:none}
+nav{background:var(--navy-mid);padding:0 24px;height:58px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(201,168,76,.15)}
+.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:26px;color:var(--gold);letter-spacing:1px}.nav-logo span{color:#fff}
+.nav-links{display:flex;align-items:center;gap:6px}.nav-links a{color:#cdd5df;font-size:12px;font-weight:500;padding:6px 10px;border-radius:5px}.nav-links a:hover{color:#fff}
+.nav-cta{background:var(--gold);color:var(--navy)!important;font-weight:700!important;border-radius:5px;padding:6px 14px!important}
+.hero-bar{background:linear-gradient(135deg,var(--navy-light),var(--navy));padding:28px 40px;display:flex;align-items:center;gap:20px}
+.back-btn{font-size:12px;font-weight:600;color:rgba(255,255,255,.6);display:flex;align-items:center;gap:4px;padding:6px 14px;border:1px solid rgba(255,255,255,.15);border-radius:5px}.back-btn:hover{color:#fff;border-color:rgba(255,255,255,.3)}
+.hero-cat-icon{width:52px;height:52px;border-radius:12px;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0}
+.hero-name{font-family:'Bebas Neue',sans-serif;font-size:32px;color:#fff;letter-spacing:.5px;line-height:1}
+.hero-handle{font-size:13px;color:#a8b8cc;margin-top:3px}
+.featured-badge{display:inline-block;background:var(--gold);color:var(--navy);font-family:'Bebas Neue',sans-serif;font-size:12px;letter-spacing:.5px;padding:3px 12px;border-radius:20px;margin-left:8px;vertical-align:middle}
+.page-wrap{max-width:960px;margin:0 auto;padding:32px 24px 64px;display:grid;grid-template-columns:1fr 300px;gap:28px}
+.main-card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:28px}
+.section-title{font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:.5px;color:var(--navy);margin-bottom:12px;border-bottom:2px solid var(--gold);padding-bottom:8px}
+.bio-text{font-size:14px;color:var(--text-mid);line-height:1.8;margin-bottom:24px}
+.meta-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:24px}
+.meta-item{background:var(--off-white);border-radius:7px;padding:12px}
+.meta-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:var(--text-muted);margin-bottom:4px}
+.meta-value{font-size:14px;font-weight:600;color:var(--navy)}
+.platforms-wrap{margin-bottom:24px}
+.platform-btn{display:flex;align-items:center;gap:12px;padding:12px 16px;background:var(--off-white);border:1px solid var(--border);border-radius:8px;margin-bottom:8px;transition:all .15s;font-weight:600;font-size:13px;color:var(--text)}
+.platform-btn:hover{border-color:var(--gold);background:var(--gold-pale);color:var(--navy)}
+.platform-btn .plat-icon{font-size:20px;width:28px;text-align:center}
+.platform-btn .plat-arrow{margin-left:auto;color:var(--text-muted);font-size:16px}
+.cats-wrap{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:0}
+.cat-badge{font-size:11px;font-weight:600;padding:5px 12px;border-radius:20px;background:#e0e7ff;color:#3730a3;border:1px solid #c7d2fe}
+.sidebar-card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:20px;margin-bottom:16px}
+.sidebar-title{font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:.5px;color:var(--navy);margin-bottom:12px;border-bottom:2px solid var(--gold);padding-bottom:7px}
+.primary-cta{display:block;background:var(--gold);color:var(--navy);font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:.5px;padding:14px;border-radius:7px;text-align:center;margin-bottom:10px}
+.primary-cta:hover{background:var(--gold-light)}
+.similar-item{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--off-white);cursor:pointer}.similar-item:last-child{border-bottom:none}
+.sim-dot{width:28px;height:28px;border-radius:6px;background:var(--navy);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
+.sim-name{font-size:12px;font-weight:600;color:var(--navy)}.sim-name:hover{color:var(--gold)}
+.loading-wrap{padding:64px;text-align:center;color:var(--text-muted)}.loading-spinner{width:32px;height:32px;border:3px solid var(--border);border-top-color:var(--gold);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 12px}@keyframes spin{to{transform:rotate(360deg)}}
+.not-found{text-align:center;padding:64px 24px;color:var(--text-muted)}
+footer{background:var(--navy);padding:32px 24px 20px;text-align:center}
+.footer-copy{font-size:11px;color:#8896a5}
+@media(max-width:768px){nav .nav-links a:not(.nav-cta){display:none}.hero-bar{padding:20px 16px;flex-wrap:wrap}.page-wrap{grid-template-columns:1fr;padding:16px 14px 48px}.sidebar{order:-1}.meta-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">Collectible<span>Find</span></a>
+  <div class="nav-links">
+    <a href="index.html">Directory</a>
+    <a href="blog.html">📝 Blog</a>
+    <a href="gear.html">🛒 Gear</a>
+    <a href="hubs.html">🔗 Hubs</a>
+    <a href="advertise.html">📢 Advertise</a>
+    <a href="submit.html" class="nav-cta">Get Listed →</a>
+  </div>
+</nav>
+
+<div class="hero-bar" id="hero-bar">
+  <a href="javascript:history.back()" class="back-btn">← Back</a>
+  <div class="hero-cat-icon" id="hero-icon">🏅</div>
+  <div>
+    <div class="hero-name" id="hero-name">Loading...</div>
+    <div class="hero-handle" id="hero-handle"></div>
+  </div>
+</div>
+
+<div class="page-wrap" id="page-content">
+  <div class="loading-wrap" style="grid-column:1/-1"><div class="loading-spinner"></div>Loading profile...</div>
+</div>
+
+<footer><div class="footer-copy">© 2025 CollectibleFind. <a href="affiliate-disclosure.html" style="color:var(--gold)">Affiliate Disclosure</a> · <a href="privacy.html" style="color:var(--gold)">Privacy Policy</a></div></footer>
+
+<script>
+const SUPABASE_URL='https://wixahbxwqhgizbotybyj.supabase.co';
+const SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndpeGFoYnh3cWhnaXpib3R5YnlqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI0MTY1NzksImV4cCI6MjA1Nzk5MjU3OX0.3UUhFVKkpPYBnBMiWJDUhP5GPb5TxcVaVDXADQjSoTs';
+
+const CAT_MAP={'sports-cards':{emoji:'⚾',label:'Sports Cards',page:'sports-cards.html'},'trading-cards':{emoji:'🃏',label:'Trading Cards',page:'trading-cards.html'},'coins':{emoji:'🪙',label:'Coins',page:'coins.html'},'stamps':{emoji:'📬',label:'Stamps',page:'stamps.html'},'toys':{emoji:'🧸',label:'Toys',page:'toys.html'},'comics':{emoji:'💥',label:'Comics',page:'comics.html'},'memorabilia':{emoji:'🏅',label:'Memorabilia',page:'memorabilia.html'},'vintage':{emoji:'🕰️',label:'Vintage',page:'vintage.html'},'sneakers':{emoji:'👟',label:'Sneakers',page:'sneakers.html'},'hollywood':{emoji:'🎬',label:'Hollywood',page:'hollywood.html'},'niche':{emoji:'🚀',label:'Niche',page:'index.html'}};
+
+function slugCat(c){if(!c)return'niche';const s=c.toLowerCase();if(s.includes('sport')&&s.includes('card'))return'sports-cards';if(s.includes('trading')||s.includes('pokemon')||s.includes('tcg')||s.includes('magic')||s.includes('yugioh'))return'trading-cards';if(s.includes('coin')||s.includes('bullion'))return'coins';if(s.includes('stamp')||s.includes('philat'))return'stamps';if(s.includes('toy')||s.includes('figur')||s.includes('lego'))return'toys';if(s.includes('comic'))return'comics';if(s.includes('memorabilia')||s.includes('autograph'))return'memorabilia';if(s.includes('vintage')||s.includes('antique'))return'vintage';if(s.includes('sneaker'))return'sneakers';if(s.includes('hollywood')||s.includes('entertainment'))return'hollywood';return'niche';}
+
+async function loadProfile(){
+  const params=new URLSearchParams(window.location.search);
+  const id=params.get('id');
+  const slug=params.get('slug');
+  const postSlug=params.get('post');
+
+  if(postSlug){loadPost(postSlug);return;}
+  if(!id&&!slug){showNotFound();return;}
+
+  try{
+    let url=`${SUPABASE_URL}/rest/v1/cf_influencers?`;
+    if(id) url+=`id=eq.${id}`;
+    else url+=`name=ilike.*${decodeURIComponent(slug).replace(/-/g,' ')}*`;
+    url+='&select=*&limit=1';
+
+    const res=await fetch(url,{headers:{apikey:SUPABASE_KEY,Authorization:`Bearer ${SUPABASE_KEY}`}});
+    const rows=await res.json();
+    if(!rows||!rows.length){showNotFound();return;}
+    const r=rows[0];
+    const d=typeof r.data==='string'?JSON.parse(r.data):(r.data||{});
+    const listing={...d,id:r.id,_name:r.name,_category:r.category};
+    renderProfile(listing);
+  }catch(e){showNotFound();}
+}
+
+function renderProfile(l){
+  const name=l._name||l.name||'Unknown Creator';
+  const handle=l.handle||l.username||'';
+  const cats=Array.isArray(l.categories)?l.categories:[l._category||'Collectibles'];
+  const primarySlug=slugCat(cats[0]||'');
+  const catInfo=CAT_MAP[primarySlug]||{emoji:'🏅',label:'Collectibles',page:'index.html'};
+  const featured=l.featured||l.isFeatured;
+  const yt=l.youtube_url||l.youtubeUrl||'';
+  const ig=l.instagram_url||l.instagramUrl||'';
+  const tt=l.tiktok_url||l.tiktokUrl||'';
+  const li=l.linkedin_url||l.linkedinUrl||'';
+  const web=l.website_url||l.websiteUrl||l.primaryLink||'';
+  const bio=l.bio||l.summary||l.aiSummary||'Verified collectibles creator listed on CollectibleFind.';
+  const followers=l.followers||l.subscriberCount||'';
+
+  // Update head
+  document.getElementById('page-title').textContent=`${name} — ${catInfo.label} Creator | CollectibleFind`;
+  document.getElementById('page-desc').content=`${bio.substring(0,155)}`;
+  document.getElementById('hero-name').innerHTML=name+(featured?'<span class="featured-badge">⭐ Featured</span>':'');
+  document.getElementById('hero-handle').textContent=handle||cats.slice(0,2).join(' · ');
+  document.getElementById('hero-icon').textContent=catInfo.emoji;
+
+  const platforms=[
+    yt?`<a href="${yt}" target="_blank" class="platform-btn"><span class="plat-icon">▶</span> YouTube Channel <span class="plat-arrow">↗</span></a>`:'',
+    ig?`<a href="${ig}" target="_blank" class="platform-btn"><span class="plat-icon">📸</span> Instagram <span class="plat-arrow">↗</span></a>`:'',
+    tt?`<a href="${tt}" target="_blank" class="platform-btn"><span class="plat-icon">♪</span> TikTok <span class="plat-arrow">↗</span></a>`:'',
+    li?`<a href="${li}" target="_blank" class="platform-btn"><span class="plat-icon">in</span> LinkedIn <span class="plat-arrow">↗</span></a>`:'',
+    web?`<a href="${web}" target="_blank" class="platform-btn"><span class="plat-icon">🌐</span> Website <span class="plat-arrow">↗</span></a>`:'',
+  ].filter(Boolean).join('');
+
+  const primaryLink=web||yt||ig||tt||'';
+
+  document.getElementById('page-content').innerHTML=`
+  <div>
+    <div class="main-card">
+      <div class="section-title">About</div>
+      <div class="bio-text">${bio}</div>
+      <div class="meta-grid">
+        ${followers?`<div class="meta-item"><div class="meta-label">Followers / Subscribers</div><div class="meta-value">${followers}</div></div>`:''}
+        ${l.experience||l.credential?`<div class="meta-item"><div class="meta-label">Experience</div><div class="meta-value">${l.experience||l.credential}</div></div>`:''}
+        ${l.highlightStat||l.highlight?`<div class="meta-item"><div class="meta-label">Highlight</div><div class="meta-value">${l.highlightStat||l.highlight}</div></div>`:''}
+        <div class="meta-item"><div class="meta-label">Category</div><div class="meta-value">${catInfo.emoji} ${catInfo.label}</div></div>
+      </div>
+      ${platforms?`<div class="section-title">Platforms</div><div class="platforms-wrap">${platforms}</div>`:''}
+      <div class="section-title">Categories</div>
+      <div class="cats-wrap">${cats.map(c=>`<span class="cat-badge">${c}</span>`).join('')}</div>
+    </div>
+  </div>
+  <div class="sidebar">
+    <div class="sidebar-card">
+      ${primaryLink?`<a href="${primaryLink}" target="_blank" class="primary-cta">Visit Channel ↗</a>`:''}
+      <a href="${catInfo.page}" style="display:block;text-align:center;font-size:12px;font-weight:700;color:var(--gold);padding:8px 0">← Back to ${catInfo.label}</a>
+    </div>
+    <div class="sidebar-card">
+      <div class="sidebar-title">Are You a Creator?</div>
+      <p style="font-size:12px;color:var(--text-muted);line-height:1.6;margin-bottom:12px">Get your profile listed for free and reach thousands of active collectors.</p>
+      <a href="submit.html" style="display:block;background:var(--navy);color:#fff;font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:.5px;padding:10px;border-radius:6px;text-align:center">Get Listed Free →</a>
+    </div>
+  </div>`;
+}
+
+async function loadPost(slug){
+  document.getElementById('hero-icon').textContent='📝';
+  document.getElementById('hero-name').textContent='Loading...';
+  try{
+    const res=await fetch(`${SUPABASE_URL}/rest/v1/cf_blog_posts?slug=eq.${slug}&select=*&limit=1`,
+      {headers:{apikey:SUPABASE_KEY,Authorization:`Bearer ${SUPABASE_KEY}`}});
+    const rows=await res.json();
+    if(!rows||!rows.length){showNotFound();return;}
+    const p=rows[0];
+    document.getElementById('hero-name').textContent=p.title||'Article';
+    document.getElementById('hero-handle').textContent=(p.date||p.created_at?.substring(0,10)||'')+(p.read_time?' · '+p.read_time:'');
+    document.getElementById('page-title').textContent=(p.title||'Article')+' | CollectibleFind Blog';
+    document.getElementById('page-content').innerHTML=`
+    <div style="grid-column:1/-1"><div class="main-card">
+      <div style="font-size:13px;color:var(--text-mid);line-height:1.9">${p.content||p.body||p.excerpt||'Full article coming soon.'}</div>
+      <div style="margin-top:24px"><a href="blog.html" style="font-size:12px;font-weight:700;color:var(--gold)">← Back to Blog</a></div>
+    </div></div>`;
+  }catch(e){showNotFound();}
+}
+
+function showNotFound(){
+  document.getElementById('hero-name').textContent='Not Found';
+  document.getElementById('page-content').innerHTML=`<div class="not-found" style="grid-column:1/-1"><div style="font-size:48px;margin-bottom:12px">😕</div><div style="font-size:16px;font-weight:600;margin-bottom:8px">Profile Not Found</div><p style="color:var(--text-muted);margin-bottom:20px">This creator profile may have been removed or the link may be incorrect.</p><a href="index.html" style="font-size:13px;font-weight:700;color:var(--gold)">← Back to Directory</a></div>`;
+}
+
+loadProfile();
+</script>
+</body>
+</html>

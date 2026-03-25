@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Listed Free — Submit Your Collectibles Creator Profile | CollectibleFind</title>
+<meta name="description" content="Submit your collectibles creator profile to CollectibleFind for free. Reach thousands of collectors searching for sports card, coin, Pokémon, comic, and vintage influencers.">
+<link rel="canonical" href="https://collectiblesfamous.netlify.app/submit.html">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0a1628;--navy-mid:#112240;--navy-light:#1a3a6e;--gold:#c9a84c;--gold-light:#e8c96d;--gold-pale:#fdf6e3;--white:#fff;--off-white:#f7f8fa;--border:#e2e6ed;--text:#0d1b2a;--text-mid:#4a5568;--text-muted:#8896a5}
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Inter',sans-serif;background:var(--off-white);color:var(--text);font-size:14px}a{color:inherit;text-decoration:none}
+.top-bar{background:var(--navy);color:#8896a5;font-size:11px;padding:6px 20px;display:flex;justify-content:space-between}.top-bar a{color:#8896a5;margin-left:14px}.top-bar a:hover{color:var(--gold)}
+nav{background:var(--navy-mid);padding:0 24px;height:58px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(201,168,76,.15)}
+.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:26px;color:var(--gold);letter-spacing:1px}.nav-logo span{color:#fff}
+.nav-links{display:flex;align-items:center;gap:6px}.nav-links a{color:#cdd5df;font-size:12px;font-weight:500;padding:6px 10px;border-radius:5px;transition:all .15s}.nav-links a:hover{color:#fff}.nav-links a.active{color:var(--gold)}
+.nav-cta{background:var(--gold);color:var(--navy)!important;font-weight:700!important;border-radius:5px;padding:6px 14px!important}
+.hero{background:linear-gradient(135deg,var(--navy-light) 0%,var(--navy) 100%);padding:44px 40px;text-align:center}
+.hero-headline{font-family:'Bebas Neue',sans-serif;font-size:46px;color:#fff;letter-spacing:.5px}.hero-headline span{color:var(--gold)}
+.hero-sub{color:#a8b8cc;font-size:13px;margin-top:10px;line-height:1.6;max-width:560px;margin-left:auto;margin-right:auto}
+.perks-row{display:flex;justify-content:center;gap:24px;padding:20px 24px;background:#fff;border-bottom:1px solid var(--border);flex-wrap:wrap}
+.perk{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;color:var(--text-mid)}.perk-icon{font-size:18px}
+.form-wrap{max-width:720px;margin:0 auto;padding:40px 24px 64px}
+.form-card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:32px;box-shadow:0 4px 20px rgba(0,0,0,.06)}
+.form-section-title{font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:.5px;color:var(--navy);margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--gold)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+.form-group{margin-bottom:14px}
+.form-label{display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:var(--navy);margin-bottom:6px}
+.form-label span{color:#dc2626;margin-left:2px}
+.form-input,.form-select,.form-textarea{width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:13px;font-family:'Inter',sans-serif;color:var(--text);background:#fff;transition:border-color .15s;outline:none}
+.form-input:focus,.form-select:focus,.form-textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,168,76,.1)}
+.form-textarea{resize:vertical;min-height:100px;line-height:1.5}
+.form-hint{font-size:11px;color:var(--text-muted);margin-top:4px}
+.cat-checkboxes{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.cat-cb{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:500;cursor:pointer;padding:6px 8px;border-radius:5px;border:1px solid var(--border);background:#fff;transition:all .15s}.cat-cb:hover{border-color:var(--gold)}
+.cat-cb input{accent-color:var(--gold);cursor:pointer}.cat-cb.checked{background:var(--gold-pale);border-color:var(--gold)}
+.submit-btn{width:100%;background:var(--gold);color:var(--navy);font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:1px;padding:16px;border-radius:8px;border:none;cursor:pointer;margin-top:24px;transition:all .15s}
+.submit-btn:hover{background:var(--gold-light);transform:translateY(-1px);box-shadow:0 4px 16px rgba(201,168,76,.3)}
+.submit-btn:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.success-box{display:none;background:var(--gold-pale);border:2px solid var(--gold);border-radius:10px;padding:32px;text-align:center;margin-top:20px}
+.success-icon{font-size:48px;margin-bottom:12px}
+.success-title{font-family:'Bebas Neue',sans-serif;font-size:28px;color:var(--navy);letter-spacing:.5px;margin-bottom:8px}
+.success-body{font-size:13px;color:var(--text-mid);line-height:1.6}
+.req-note{font-size:11px;color:var(--text-muted);margin-bottom:20px}
+.form-divider{border:none;border-top:1px solid var(--border);margin:24px 0}
+.trust-row{display:flex;gap:16px;flex-wrap:wrap;margin-top:32px;justify-content:center}
+.trust-item{font-size:11px;color:var(--text-muted);display:flex;align-items:center;gap:4px}
+footer{background:var(--navy);padding:48px 24px 24px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px;max-width:1200px;margin:0 auto 32px}
+.footer-brand{font-family:'Bebas Neue',sans-serif;font-size:28px;color:var(--gold);margin-bottom:10px}.footer-brand span{color:#fff}.footer-tagline{font-size:12px;color:#8896a5;line-height:1.6}
+.footer-col-title{font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:.8px;color:var(--gold);margin-bottom:12px}.footer-links{display:flex;flex-direction:column;gap:7px}.footer-links a{font-size:12px;color:#8896a5}.footer-links a:hover{color:#fff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:20px;display:flex;justify-content:space-between;max-width:1200px;margin:0 auto}.footer-copy{font-size:11px;color:#8896a5}.footer-aff{font-size:10px;color:#8896a5}
+@media(max-width:768px){.top-bar{display:none}nav{padding:0 14px;height:52px}.nav-links a:not(.nav-cta){display:none}.hero{padding:24px 16px}.hero-headline{font-size:32px}.perks-row{gap:12px}.form-wrap{padding:20px 14px 48px}.form-card{padding:20px}.form-row{grid-template-columns:1fr}.cat-checkboxes{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<div class="top-bar"><span>✨ Get Listed on CollectibleFind — Always Free</span><div><a href="advertise.html">Advertise</a><a href="index.html">Directory</a></div></div>
+<nav>
+  <a href="index.html" class="nav-logo">Collectible<span>Find</span></a>
+  <div class="nav-links">
+    <a href="index.html">Directory</a>
+    <a href="blog.html">📝 Blog</a>
+    <a href="gear.html">🛒 Gear</a>
+    <a href="hubs.html">🔗 Hubs</a>
+    <a href="advertise.html">📢 Advertise</a>
+    <a href="submit.html" class="nav-cta active">Get Listed →</a>
+  </div>
+</nav>
+<div class="hero">
+  <div style="font-size:11px;color:rgba(255,255,255,.5);margin-bottom:10px"><a href="index.html" style="color:rgba(255,255,255,.5)">Home</a> › Get Listed</div>
+  <div class="hero-headline">Get Listed<br><span>For Free</span></div>
+  <div class="hero-sub">Submit your collectibles creator profile to reach thousands of collectors actively searching for their next favorite educator, breaker, or influencer.</div>
+</div>
+<div class="perks-row">
+  <div class="perk"><span class="perk-icon">✅</span> 100% Free to List</div>
+  <div class="perk"><span class="perk-icon">👁️</span> Reach Verified Collectors</div>
+  <div class="perk"><span class="perk-icon">🔍</span> Searchable by Category</div>
+  <div class="perk"><span class="perk-icon">⭐</span> Featured Spots Available</div>
+  <div class="perk"><span class="perk-icon">🔗</span> Direct Links to Your Channels</div>
+</div>
+<div class="form-wrap">
+  <div class="form-card" id="submit-form-card">
+    <div class="req-note"><span style="color:#dc2626">*</span> Required fields</div>
+
+    <!-- Basic Info -->
+    <div class="form-section-title">👤 Basic Information</div>
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">Full Name / Brand Name <span>*</span></label>
+        <input type="text" class="form-input" id="f-name" placeholder="e.g. Sports Card Investor" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Handle / Username</label>
+        <input type="text" class="form-input" id="f-handle" placeholder="@yourusername">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Your Email <span>*</span></label>
+      <input type="email" class="form-input" id="f-email" placeholder="you@email.com" required>
+      <div class="form-hint">For review updates only — not publicly displayed.</div>
+    </div>
+
+    <!-- Categories -->
+    <hr class="form-divider">
+    <div class="form-section-title">📂 Categories <span style="color:#dc2626;font-size:12px">*</span></div>
+    <div class="cat-checkboxes" id="cat-checkboxes">
+      <label class="cat-cb"><input type="checkbox" value="Sports Cards"> ⚾ Sports Cards</label>
+      <label class="cat-cb"><input type="checkbox" value="Trading Cards"> 🃏 Trading Cards</label>
+      <label class="cat-cb"><input type="checkbox" value="Coins"> 🪙 Coins</label>
+      <label class="cat-cb"><input type="checkbox" value="Stamps"> 📬 Stamps</label>
+      <label class="cat-cb"><input type="checkbox" value="Toys"> 🧸 Toys</label>
+      <label class="cat-cb"><input type="checkbox" value="Comics"> 💥 Comics</label>
+      <label class="cat-cb"><input type="checkbox" value="Sports Memorabilia"> 🏅 Memorabilia</label>
+      <label class="cat-cb"><input type="checkbox" value="Vintage"> 🕰️ Vintage</label>
+      <label class="cat-cb"><input type="checkbox" value="Sneakers"> 👟 Sneakers</label>
+      <label class="cat-cb"><input type="checkbox" value="Hollywood"> 🎬 Hollywood</label>
+      <label class="cat-cb"><input type="checkbox" value="Paper Ephemera"> 📜 Paper Ephemera</label>
+      <label class="cat-cb"><input type="checkbox" value="Niche & Emerging"> 🚀 Niche</label>
+    </div>
+
+    <!-- Channels -->
+    <hr class="form-divider">
+    <div class="form-section-title">🔗 Your Channels</div>
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">▶ YouTube URL</label>
+        <input type="url" class="form-input" id="f-youtube" placeholder="https://youtube.com/@...">
+      </div>
+      <div class="form-group">
+        <label class="form-label">📸 Instagram URL</label>
+        <input type="url" class="form-input" id="f-instagram" placeholder="https://instagram.com/...">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">♪ TikTok URL</label>
+        <input type="url" class="form-input" id="f-tiktok" placeholder="https://tiktok.com/@...">
+      </div>
+      <div class="form-group">
+        <label class="form-label">🌐 Website URL</label>
+        <input type="url" class="form-input" id="f-website" placeholder="https://yoursite.com">
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <hr class="form-divider">
+    <div class="form-section-title">📊 Audience Stats</div>
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">Subscriber / Follower Count</label>
+        <input type="text" class="form-input" id="f-followers" placeholder="e.g. 150K YouTube">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Experience / Credential</label>
+        <input type="text" class="form-input" id="f-credential" placeholder="e.g. 10+ years collecting">
+      </div>
+    </div>
+
+    <!-- Bio -->
+    <hr class="form-divider">
+    <div class="form-section-title">✏️ About You <span style="color:#dc2626;font-size:12px">*</span></div>
+    <div class="form-group">
+      <label class="form-label">Bio / Description <span>*</span></label>
+      <textarea class="form-textarea" id="f-bio" placeholder="Tell collectors what you cover, your specialty, and why they should follow you (2–4 sentences)..." required></textarea>
+      <div class="form-hint">Write in 3rd person if possible. This will appear on your public listing.</div>
+    </div>
+
+    <button class="submit-btn" id="submit-btn" onclick="submitListing()">Submit My Profile →</button>
+  </div>
+
+  <!-- Success State -->
+  <div class="success-box" id="success-box">
+    <div class="success-icon">🎉</div>
+    <div class="success-title">Submission Received!</div>
+    <div class="success-body">Thanks for submitting your profile to CollectibleFind! Our team manually reviews every submission within 3–5 business days. If approved, your profile will appear in the directory with links to all your channels.<br><br>We'll email you when your listing goes live.</div>
+    <div style="margin-top:20px"><a href="index.html" style="font-size:13px;font-weight:700;color:var(--gold)">← Back to Directory</a></div>
+  </div>
+
+  <div class="trust-row">
+    <div class="trust-item">🔒 100% Free — No credit card required</div>
+    <div class="trust-item">👁️ Manual review by our team</div>
+    <div class="trust-item">📬 Email confirmation on approval</div>
+    <div class="trust-item">🚫 No pay-to-play rankings</div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div><div class="footer-brand">Collectible<span>Find</span></div><div class="footer-tagline">The #1 directory of collectibles influencers. 232+ verified profiles — always free to browse.</div></div>
+    <div><div class="footer-col-title">Categories</div><div class="footer-links"><a href="sports-cards.html">⚾ Sports Cards</a><a href="trading-cards.html">🃏 Trading Cards</a><a href="coins.html">🪙 Coins</a><a href="stamps.html">📬 Stamps</a><a href="toys.html">🧸 Toys</a><a href="comics.html">💥 Comics</a></div></div>
+    <div><div class="footer-col-title">More</div><div class="footer-links"><a href="memorabilia.html">🏅 Memorabilia</a><a href="vintage.html">🕰️ Vintage</a><a href="sneakers.html">👟 Sneakers</a><a href="hollywood.html">🎬 Hollywood</a><a href="gear.html">🛒 Gear</a><a href="blog.html">📝 Blog</a></div></div>
+    <div><div class="footer-col-title">Directory</div><div class="footer-links"><a href="submit.html">Get Listed</a><a href="advertise.html">Advertise</a><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="affiliate-disclosure.html">Disclosure</a></div></div>
+  </div>
+  <div class="footer-bottom"><div class="footer-copy">© 2025 CollectibleFind. All rights reserved.</div><div class="footer-aff">Free to browse. Free to list.</div></div>
+</footer>
+
+<script>
+const SUPABASE_URL='https://wixahbxwqhgizbotybyj.supabase.co';
+const SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndpeGFoYnh3cWhnaXpib3R5YnlqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI0MTY1NzksImV4cCI6MjA1Nzk5MjU3OX0.3UUhFVKkpPYBnBMiWJDUhP5GPb5TxcVaVDXADQjSoTs';
+
+// Category checkbox visual toggle
+document.querySelectorAll('.cat-cb input').forEach(cb=>{
+  cb.addEventListener('change',function(){
+    this.closest('.cat-cb').classList.toggle('checked',this.checked);
+  });
+});
+
+async function submitListing(){
+  const name=document.getElementById('f-name').value.trim();
+  const email=document.getElementById('f-email').value.trim();
+  const bio=document.getElementById('f-bio').value.trim();
+  const cats=[...document.querySelectorAll('.cat-cb input:checked')].map(c=>c.value);
+  if(!name){alert('Please enter your name or brand name.');return;}
+  if(!email||!email.includes('@')){alert('Please enter a valid email address.');return;}
+  if(!bio){alert('Please enter a brief bio or description.');return;}
+  if(!cats.length){alert('Please select at least one category.');return;}
+  const btn=document.getElementById('submit-btn');
+  btn.disabled=true;btn.textContent='Submitting...';
+  const payload={
+    name,
+    email,
+    categories:cats,
+    bio,
+    handle:document.getElementById('f-handle').value.trim()||null,
+    youtube_url:document.getElementById('f-youtube').value.trim()||null,
+    instagram_url:document.getElementById('f-instagram').value.trim()||null,
+    tiktok_url:document.getElementById('f-tiktok').value.trim()||null,
+    website_url:document.getElementById('f-website').value.trim()||null,
+    followers:document.getElementById('f-followers').value.trim()||null,
+    credential:document.getElementById('f-credential').value.trim()||null,
+    status:'pending',
+    source:'submit_form',
+    created_at:new Date().toISOString()
+  };
+  try{
+    const res=await fetch(`${SUPABASE_URL}/rest/v1/cf_submissions`,{
+      method:'POST',
+      headers:{apikey:SUPABASE_KEY,Authorization:`Bearer ${SUPABASE_KEY}`,'Content-Type':'application/json','Prefer':'return=minimal'},
+      body:JSON.stringify(payload)
+    });
+    if(res.ok||res.status===201){
+      document.getElementById('submit-form-card').style.display='none';
+      document.getElementById('success-box').style.display='block';
+      window.scrollTo({top:0,behavior:'smooth'});
+    }else{
+      throw new Error('Submission failed');
+    }
+  }catch(e){
+    alert('Something went wrong submitting your profile. Please try again or email us directly.');
+    btn.disabled=false;btn.textContent='Submit My Profile →';
+  }
+}
+</script>
+</body>
+</html>
