@@ -309,8 +309,8 @@ async function fetchListings(){
     }).filter(l=>{
       if(l.status==='draft')return false;
       if(!l.name)return false;
-      const str=[(l.category||''),(l.cats||[]).join(' '),(l.summary||'')].join(' ').toLowerCase();
-      return CAT_KEYWORDS.some(k=>str.includes(k));
+      const str=[(l.category||''),(l.cats||[]).join(' '),(l.summary||'')].join(' ').toLowerCase().replace(/-/g,' ');
+      return CAT_KEYWORDS.some(k=>str.includes(k.replace(/-/g,' ')));
     });
     render();
   }catch(e){

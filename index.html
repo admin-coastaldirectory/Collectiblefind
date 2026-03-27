@@ -305,8 +305,9 @@ function buildCounts(){
 }
 
 function catMatch(l,kw){
-  const str=[(l.category||''),(l.cats||[]).join(' ')].join(' ').toLowerCase();
-  return str.includes(kw);
+  // Normalize hyphens to spaces so "sports-cards" matches keyword "sports cards"
+  const str=[(l.category||''),(l.cats||[]).join(' ')].join(' ').toLowerCase().replace(/-/g,' ');
+  return str.includes(kw.toLowerCase().replace(/-/g,' '));
 }
 
 function matchCat(l){
