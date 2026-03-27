@@ -6,104 +6,114 @@
 <title>Collectibles Blog — Guides, News & Tips for Every Niche | CollectibleFind</title>
 <meta name="description" content="Read the CollectibleFind blog for expert guides, market news, and collecting tips covering sports cards, coins, Pokémon, comics, vintage, stamps, and memorabilia.">
 <link rel="canonical" href="https://collectiblesfamous.netlify.app/blog.html">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#0a1628;--navy-mid:#112240;--navy-light:#1a3a6e;--gold:#c9a84c;--gold-light:#e8c96d;--gold-pale:#fdf6e3;--white:#fff;--off-white:#f7f8fa;--border:#e2e6ed;--text:#0d1b2a;--text-mid:#4a5568;--text-muted:#8896a5}
-*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Inter',sans-serif;background:var(--off-white);color:var(--text);font-size:14px}a{color:inherit;text-decoration:none}
-.top-bar{background:var(--navy);color:#8896a5;font-size:11px;padding:6px 20px;display:flex;justify-content:space-between}
-.top-bar a{color:#8896a5;margin-left:14px}.top-bar a:hover{color:var(--gold)}
-nav{background:var(--navy-mid);padding:0 24px;height:58px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(201,168,76,.15)}
-.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:26px;color:var(--gold);letter-spacing:1px}.nav-logo span{color:#fff}
-.nav-links{display:flex;align-items:center;gap:6px}.nav-links a{color:#cdd5df;font-size:12px;font-weight:500;padding:6px 10px;border-radius:5px;transition:all .15s}.nav-links a:hover{color:#fff}.nav-links a.active{color:var(--gold)}
-.nav-cta{background:var(--gold);color:var(--navy)!important;font-weight:700!important;border-radius:5px;padding:6px 14px!important}
-.hero{background:linear-gradient(135deg,var(--navy-light) 0%,var(--navy) 100%);padding:44px 40px}
-.hero-headline{font-family:'Bebas Neue',sans-serif;font-size:46px;color:#fff;letter-spacing:.5px}.hero-headline span{color:var(--gold)}
-.hero-sub{color:#a8b8cc;font-size:13px;margin-top:10px;line-height:1.6;max-width:600px}
-.filter-bar{background:#fff;border-bottom:1px solid var(--border);padding:12px 24px;display:flex;gap:6px;flex-wrap:wrap;position:sticky;top:58px;z-index:90}
-.ftab{font-size:11px;font-weight:600;padding:6px 14px;border-radius:20px;border:1px solid var(--border);background:#fff;color:var(--text-mid);cursor:pointer;transition:all .15s}.ftab:hover{border-color:var(--gold);color:var(--gold)}.ftab.active{background:var(--navy);color:#fff;border-color:var(--navy)}
-.page-layout{display:grid;grid-template-columns:1fr 280px;gap:32px;max-width:1200px;margin:0 auto;padding:32px 24px}
-.posts-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.post-card{background:#fff;border:1px solid var(--border);border-radius:10px;overflow:hidden;transition:all .2s;cursor:pointer}.post-card:hover{border-color:var(--gold);box-shadow:0 4px 16px rgba(0,0,0,.08);transform:translateY(-2px)}
-.post-card-img{height:140px;background:linear-gradient(135deg,var(--navy-light),var(--navy));display:flex;align-items:center;justify-content:center;font-size:48px}
-.post-card-body{padding:16px}
-.post-cat-badge{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:var(--gold);margin-bottom:6px}
-.post-title{font-size:14px;font-weight:700;color:var(--navy);line-height:1.4;margin-bottom:6px}
-.post-excerpt{font-size:12px;color:var(--text-mid);line-height:1.6;margin-bottom:10px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-.post-meta{display:flex;justify-content:space-between;font-size:10px;color:var(--text-muted)}
-.post-card-featured{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;border-radius:10px;overflow:hidden;background:#fff;border:2px solid var(--gold)}
-.post-card-featured .post-card-img{height:auto;min-height:200px}
-.post-card-featured .post-card-body{padding:24px;display:flex;flex-direction:column;justify-content:center}
-.post-card-featured .post-title{font-size:20px;margin-bottom:10px}
-.post-card-featured .post-excerpt{-webkit-line-clamp:4}
-.post-read-btn{display:inline-block;margin-top:10px;font-size:12px;font-weight:700;color:var(--gold)}
-.loading-msg{text-align:center;padding:48px;color:var(--text-muted);font-size:13px;grid-column:1/-1}
-.loading-spinner{width:28px;height:28px;border:3px solid var(--border);border-top-color:var(--gold);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 10px}@keyframes spin{to{transform:rotate(360deg)}}
-.sidebar-card{background:#fff;border:1px solid var(--border);border-radius:8px;padding:18px;margin-bottom:16px}
-.sidebar-title{font-family:'Bebas Neue',sans-serif;font-size:15px;letter-spacing:.5px;color:var(--navy);margin-bottom:12px;border-bottom:2px solid var(--gold);padding-bottom:8px}
-.topic-list{display:flex;flex-direction:column;gap:8px}
-.topic-item{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;color:var(--text);padding:6px 0;border-bottom:1px solid var(--off-white);cursor:pointer}.topic-item:last-child{border-bottom:none}.topic-item:hover{color:var(--gold)}
-.topic-count{font-size:10px;color:var(--text-muted);background:var(--off-white);padding:2px 7px;border-radius:10px;margin-left:auto}
-.newsletter-box{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-light) 100%);border-radius:8px;padding:20px;text-align:center}
-.nl-title{font-family:'Bebas Neue',sans-serif;font-size:18px;color:var(--gold);letter-spacing:.5px;margin-bottom:6px}
-.nl-body{font-size:11px;color:#a8b8cc;line-height:1.5;margin-bottom:14px}
-.nl-input{width:100%;padding:8px 12px;border-radius:5px;border:none;font-size:12px;margin-bottom:8px}
-.nl-btn{width:100%;background:var(--gold);color:var(--navy);font-family:'Bebas Neue',sans-serif;font-size:15px;letter-spacing:.5px;padding:9px;border-radius:5px;border:none;cursor:pointer}
-.empty-state{grid-column:1/-1;text-align:center;padding:64px 20px;color:var(--text-muted)}
-.empty-icon{font-size:48px;margin-bottom:12px}
-footer{background:var(--navy);padding:48px 24px 24px}
-.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px;max-width:1200px;margin:0 auto 32px}
-.footer-brand{font-family:'Bebas Neue',sans-serif;font-size:28px;color:var(--gold);margin-bottom:10px}.footer-brand span{color:#fff}.footer-tagline{font-size:12px;color:#8896a5;line-height:1.6}
-.footer-col-title{font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:.8px;color:var(--gold);margin-bottom:12px}.footer-links{display:flex;flex-direction:column;gap:7px}.footer-links a{font-size:12px;color:#8896a5}.footer-links a:hover{color:#fff}
-.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:20px;display:flex;justify-content:space-between;max-width:1200px;margin:0 auto}.footer-copy{font-size:11px;color:#8896a5}.footer-aff{font-size:10px;color:#8896a5}
-@media(max-width:768px){.top-bar{display:none}nav{padding:0 14px;height:52px}.nav-links a:not(.nav-cta){display:none}.filter-bar{top:52px}.hero{padding:24px 16px}.hero-headline{font-size:32px}.page-layout{grid-template-columns:1fr;padding:14px}.sidebar{display:none!important}.posts-grid{grid-template-columns:1fr}.post-card-featured{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}}
+:root{--green:#1B4332;--green-mid:#2D6A4F;--green-light:#D8EDD6;--green-dark:#122B21;--gold:#B8872A;--gold-light:#FBF3E0;--gold-mid:#C89830;--ivory:#F7F3EC;--paper:#FDFAF5;--paper-border:#E2D9C8;--ink:#1A1208;--ink-mid:#3D3020;--muted:#8C7B5E;--muted-mid:#5C4A30;--white:#FFFFFF;--radius:4px;--shadow:0 2px 16px rgba(26,18,8,.07);--shadow-hover:0 8px 36px rgba(26,18,8,.13);}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Barlow',sans-serif;background:var(--ivory);color:var(--ink);line-height:1.6;}
+a{color:inherit;text-decoration:none;}
+nav{background:var(--green);border-bottom:3px solid var(--gold);padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:200;box-shadow:0 3px 20px rgba(26,18,8,.25);}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:700;color:var(--ivory);letter-spacing:.3px;}.logo span{color:var(--gold);}
+.nav-links{display:flex;align-items:center;gap:3px;}
+.nav-link{padding:8px 13px;border-radius:4px;font-size:.84rem;font-weight:500;color:rgba(247,243,236,.65);transition:all .18s;}
+.nav-link:hover{background:rgba(184,135,42,.18);color:var(--ivory);}
+.nav-cta{background:var(--gold);color:var(--green)!important;padding:9px 20px;border-radius:4px;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:.92rem;margin-left:8px;}
+.nav-cta:hover{background:var(--gold-mid);}
+.hero{background:linear-gradient(160deg,var(--green-dark) 0%,var(--green) 60%,var(--green-mid) 100%);padding:52px 40px 60px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 50% 110%,rgba(184,135,42,.15) 0%,transparent 70%);}
+.hero-label{font-size:.65rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:12px;position:relative;}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,4vw,2.8rem);font-weight:700;font-style:italic;color:white;margin-bottom:10px;position:relative;}
+.hero h1 span{color:var(--gold);}
+.hero-sub{font-size:.9rem;color:rgba(247,243,236,.65);max-width:580px;line-height:1.75;position:relative;}
+.filter-bar{background:var(--paper);border-bottom:2px solid var(--paper-border);padding:14px 32px;display:flex;gap:6px;flex-wrap:wrap;position:sticky;top:64px;z-index:90;}
+.ftab{font-size:.75rem;font-weight:600;padding:6px 16px;border-radius:20px;border:1.5px solid var(--paper-border);background:var(--paper);color:var(--muted-mid);cursor:pointer;transition:all .15s;font-family:'Barlow',sans-serif;}
+.ftab:hover{border-color:var(--gold);color:var(--gold);}
+.ftab.active{background:var(--green);color:white;border-color:var(--green);}
+.page-layout{display:grid;grid-template-columns:1fr 280px;gap:32px;max-width:1200px;margin:0 auto;padding:36px 24px 72px;}
+.posts-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.post-card{background:var(--paper);border:1.5px solid var(--paper-border);border-radius:var(--radius);overflow:hidden;transition:all .2s;cursor:pointer;}
+.post-card:hover{border-color:rgba(184,135,42,.5);box-shadow:var(--shadow-hover);transform:translateY(-3px);}
+.post-card-featured{grid-column:1/-1;}
+.post-card-img{height:140px;background:linear-gradient(135deg,var(--green),var(--green-mid));display:flex;align-items:center;justify-content:center;font-size:3rem;}
+.post-card-featured .post-card-img{height:200px;font-size:4rem;}
+.post-card-body{padding:18px;}
+.post-cat-badge{display:inline-block;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:var(--gold);margin-bottom:7px;}
+.post-title{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:700;color:var(--ink);line-height:1.35;margin-bottom:8px;}
+.post-card-featured .post-title{font-size:1.35rem;}
+.post-excerpt{font-size:.8rem;color:var(--muted-mid);line-height:1.65;margin-bottom:10px;}
+.post-meta{display:flex;gap:12px;font-size:.7rem;color:var(--muted);margin-bottom:8px;}
+.post-read-btn{font-size:.78rem;font-weight:700;color:var(--gold);}
+.empty-state{grid-column:1/-1;text-align:center;padding:60px 20px;}
+.empty-icon{font-size:3rem;margin-bottom:12px;}
+.sidebar{}
+.sidebar-card{background:var(--paper);border:1.5px solid var(--paper-border);border-radius:var(--radius);padding:20px;margin-bottom:16px;position:sticky;top:120px;}
+.sidebar-title{font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:2.5px;color:var(--gold);margin-bottom:14px;}
+.topic-item{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(--ivory);font-size:.82rem;font-weight:500;color:var(--ink-mid);cursor:pointer;transition:color .15s;}
+.topic-item:last-child{border-bottom:none;}
+.topic-item:hover{color:var(--gold);}
+.topic-count{margin-left:auto;font-size:.7rem;color:var(--muted);font-weight:400;}
+.newsletter-box{background:linear-gradient(135deg,var(--green),var(--green-mid));border-radius:var(--radius);padding:22px;}
+.nl-title{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:700;color:var(--gold);margin-bottom:8px;}
+.nl-body{font-size:.78rem;color:rgba(247,243,236,.7);line-height:1.6;margin-bottom:14px;}
+.nl-input{width:100%;padding:9px 12px;border-radius:var(--radius);border:none;font-size:.82rem;font-family:'Barlow',sans-serif;margin-bottom:8px;background:rgba(247,243,236,.92);color:var(--ink);}
+.nl-btn{width:100%;background:var(--gold);color:var(--green);font-family:'Cormorant Garamond',serif;font-weight:700;font-size:.95rem;padding:10px;border-radius:var(--radius);border:none;cursor:pointer;transition:all .18s;}
+.nl-btn:hover{background:var(--gold-mid);}
+footer{background:var(--green-dark);padding:48px 32px 22px;}
+.footer-inner{max-width:1200px;margin:0 auto;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:28px;margin-bottom:28px;}
+.footer-brand{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:700;color:var(--ivory);margin-bottom:8px;}.footer-brand span{color:var(--gold);}
+.footer-tagline{font-size:.76rem;color:rgba(247,243,236,.4);line-height:1.6;}
+.footer-col-title{font-size:.58rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--gold);margin-bottom:10px;}
+.footer-links{display:flex;flex-direction:column;gap:6px;}.footer-links a{font-size:.8rem;color:rgba(247,243,236,.5);}.footer-links a:hover{color:var(--ivory);}
+.footer-bottom{border-top:1px solid rgba(247,243,236,.07);padding-top:18px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+.footer-copy{font-size:.7rem;color:rgba(247,243,236,.3);}
+@media(max-width:960px){.page-layout{grid-template-columns:1fr;}.sidebar{display:none;}.posts-grid{grid-template-columns:1fr;}}
+@media(max-width:600px){nav{padding:0 14px;}.nav-link:not(.nav-cta){display:none;}.hero{padding:36px 16px 44px;}.filter-bar{padding:10px 14px;}.page-layout{padding:20px 14px 48px;}.footer-grid{grid-template-columns:1fr 1fr;}}
 </style>
 </head>
 <body>
-<div class="top-bar"><span>📝 CollectibleFind Blog — Guides & Market News</span><div><a href="advertise.html">Advertise</a><a href="submit.html">Get Listed</a></div></div>
 <nav>
-  <a href="index.html" class="nav-logo">Collectible<span>Find</span></a>
+  <a href="index.html" class="logo">Collectible<span>Find</span></a>
   <div class="nav-links">
-    <a href="index.html">Directory</a>
-    <a href="blog.html" class="active">📝 Blog</a>
-    <a href="supplies.html">🛒 Supplies</a>
-    <a href="hubs.html">🔗 Hubs</a>
-    <a href="advertise.html">📢 Advertise</a>
+    <a href="index.html" class="nav-link">Directory</a>
+    <a href="blog.html" class="nav-link" style="color:var(--gold);font-weight:600;">📝 Blog</a>
+    <a href="supplies.html" class="nav-link">🛒 Supplies</a>
+    <a href="hubs.html" class="nav-link">🔗 Hubs</a>
+    <a href="advertise.html" class="nav-link">📢 Advertise</a>
     <a href="submit.html" class="nav-cta">Get Listed →</a>
   </div>
 </nav>
 <div class="hero">
-  <div style="font-size:11px;color:rgba(255,255,255,.5);margin-bottom:10px"><a href="index.html" style="color:rgba(255,255,255,.5)">Home</a> › Blog</div>
-  <div class="hero-headline">Collectibles<br><span>Blog</span></div>
-  <div class="hero-sub">Expert guides, market news, and collecting tips for sports cards, coins, Pokémon, comics, vintage, and more.</div>
+  <div class="hero-label">Collectibles Knowledge Base</div>
+  <h1>The CollectibleFind <span>Blog</span></h1>
+  <p class="hero-sub">Expert guides, market news, and collecting tips covering sports cards, coins, Pokémon, comics, vintage, stamps, memorabilia, and more.</p>
 </div>
 <div class="filter-bar">
   <button class="ftab active" onclick="filterPosts('all',this)">🔍 All Posts</button>
   <button class="ftab" onclick="filterPosts('sports-cards',this)">⚾ Sports Cards</button>
-  <button class="ftab" onclick="filterPosts('trading-cards',this)">🃏 TCG</button>
+  <button class="ftab" onclick="filterPosts('trading-cards',this)">🃏 Trading Cards</button>
   <button class="ftab" onclick="filterPosts('coins',this)">🪙 Coins</button>
-  <button class="ftab" onclick="filterPosts('stamps',this)">📬 Stamps</button>
-  <button class="ftab" onclick="filterPosts('toys',this)">🧸 Toys</button>
   <button class="ftab" onclick="filterPosts('comics',this)">💥 Comics</button>
   <button class="ftab" onclick="filterPosts('vintage',this)">🕰️ Vintage</button>
+  <button class="ftab" onclick="filterPosts('stamps',this)">📬 Stamps</button>
   <button class="ftab" onclick="filterPosts('guides',this)">📖 Guides</button>
 </div>
 <div class="page-layout">
   <div>
     <div class="posts-grid" id="posts-grid">
-      <div class="loading-msg"><div class="loading-spinner"></div>Loading posts...</div>
+      <div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--muted);">Loading posts…</div>
     </div>
   </div>
-  <div class="sidebar">
+  <aside class="sidebar">
     <div class="sidebar-card">
-      <div class="sidebar-title">Browse Topics</div>
-      <div class="topic-list">
-        <div class="topic-item" onclick="filterPosts('sports-cards',null)"><span>⚾</span> Sports Cards <span class="topic-count">—</span></div>
-        <div class="topic-item" onclick="filterPosts('trading-cards',null)"><span>🃏</span> Trading Cards <span class="topic-count">—</span></div>
-        <div class="topic-item" onclick="filterPosts('coins',null)"><span>🪙</span> Coins & Currency <span class="topic-count">—</span></div>
-        <div class="topic-item" onclick="filterPosts('stamps',null)"><span>📬</span> Stamps <span class="topic-count">—</span></div>
-        <div class="topic-item" onclick="filterPosts('vintage',null)"><span>🕰️</span> Vintage <span class="topic-count">—</span></div>
-        <div class="topic-item" onclick="filterPosts('guides',null)"><span>📖</span> Guides <span class="topic-count">—</span></div>
-      </div>
+      <div class="sidebar-title">Browse by Topic</div>
+      <div class="topic-item" onclick="filterPosts('all',null)"><span>🔍</span> All Posts <span class="topic-count">—</span></div>
+      <div class="topic-item" onclick="filterPosts('sports-cards',null)"><span>⚾</span> Sports Cards <span class="topic-count">—</span></div>
+      <div class="topic-item" onclick="filterPosts('trading-cards',null)"><span>🃏</span> Trading Cards <span class="topic-count">—</span></div>
+      <div class="topic-item" onclick="filterPosts('coins',null)"><span>🪙</span> Coins & Currency <span class="topic-count">—</span></div>
+      <div class="topic-item" onclick="filterPosts('stamps',null)"><span>📬</span> Stamps <span class="topic-count">—</span></div>
+      <div class="topic-item" onclick="filterPosts('vintage',null)"><span>🕰️</span> Vintage <span class="topic-count">—</span></div>
+      <div class="topic-item" onclick="filterPosts('guides',null)"><span>📖</span> Guides <span class="topic-count">—</span></div>
     </div>
     <div class="newsletter-box">
       <div class="nl-title">Stay Updated</div>
@@ -111,19 +121,22 @@ footer{background:var(--navy);padding:48px 24px 24px}
       <input class="nl-input" type="email" id="nl-email" placeholder="your@email.com">
       <button class="nl-btn" onclick="subscribeNewsletter()">Subscribe Free →</button>
     </div>
-  </div>
+  </aside>
 </div>
-
 <footer>
-  <div class="footer-grid">
-    <div><div class="footer-brand">Collectible<span>Find</span></div><div class="footer-tagline">The #1 directory of collectibles influencers. 232+ verified profiles — always free to browse.</div></div>
-    <div><div class="footer-col-title">Categories</div><div class="footer-links"><a href="sports-cards.html">⚾ Sports Cards</a><a href="trading-cards.html">🃏 Trading Cards</a><a href="coins.html">🪙 Coins</a><a href="stamps.html">📬 Stamps</a><a href="toys.html">🧸 Toys</a><a href="comics.html">💥 Comics</a></div></div>
-    <div><div class="footer-col-title">More</div><div class="footer-links"><a href="memorabilia.html">🏅 Memorabilia</a><a href="vintage.html">🕰️ Vintage</a><a href="sneakers.html">👟 Sneakers</a><a href="hollywood.html">🎬 Hollywood</a><a href="supplies.html">🛒 Supplies</a><a href="blog.html">📝 Blog</a></div></div>
-    <div><div class="footer-col-title">Directory</div><div class="footer-links"><a href="submit.html">Get Listed</a><a href="advertise.html">Advertise</a><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="affiliate-disclosure.html">Disclosure</a></div></div>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div><div class="footer-brand">Collectible<span>Find</span></div><div class="footer-tagline">The #1 directory of collectibles influencers. 483+ verified profiles — always free to browse.</div></div>
+      <div><div class="footer-col-title">Categories</div><div class="footer-links"><a href="sports-cards.html">⚾ Sports Cards</a><a href="trading-cards.html">🃏 Trading Cards</a><a href="coins.html">🪙 Coins</a><a href="stamps.html">📬 Stamps</a><a href="toys.html">🧸 Toys</a><a href="comics.html">💥 Comics</a></div></div>
+      <div><div class="footer-col-title">More</div><div class="footer-links"><a href="memorabilia.html">🏅 Memorabilia</a><a href="vintage.html">🕰️ Vintage</a><a href="sneakers.html">👟 Sneakers</a><a href="hollywood.html">🎬 Hollywood</a><a href="supplies.html">🛒 Supplies</a><a href="blog.html">📝 Blog</a></div></div>
+      <div><div class="footer-col-title">Directory</div><div class="footer-links"><a href="submit.html">Get Listed Free</a><a href="advertise.html">Advertise</a><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="affiliate-disclosure.html">Disclosure</a></div></div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 CollectibleFind. All rights reserved.</div>
+      <div class="footer-copy"><a href="affiliate-disclosure.html" style="color:rgba(184,135,42,.5)">Affiliate Disclosure →</a></div>
+    </div>
   </div>
-  <div class="footer-bottom"><div class="footer-copy">© 2025 CollectibleFind. All rights reserved.</div><div class="footer-aff"><a href="affiliate-disclosure.html" style="color:var(--gold)">Affiliate Disclosure →</a></div></div>
 </footer>
-
 <script>
 const SUPABASE_URL='https://vtlgfwldogsdueiahidp.supabase.co';
 const SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ0bGdmd2xkb2dzZHVlaWFoaWRwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMwMjYyOTgsImV4cCI6MjA4ODYwMjI5OH0.L3rNdeNh_282W1BRsYBc64-64_l8bgHG6kMGSU4C048';
