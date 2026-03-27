@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Advertise on CollectibleFind — Reach Collectors & Enthusiasts | CollectibleFind</title>
-<meta name="description" content="Advertise on CollectibleFind and reach thousands of active collectors, investors, and enthusiasts. Featured listings, newsletter sponsorships, and brand partnerships available.">
+<meta name="description" content="Advertise on CollectibleFind and reach thousands of active collectors. Pay-per-click advertising, featured listings, newsletter sponsorships, and enterprise partnerships available.">
 <link rel="canonical" href="https://collectiblesfamous.netlify.app/advertise.html">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -14,86 +14,139 @@
   --ivory:#F7F3EC;--paper:#FDFAF5;--paper-border:#E2D9C8;
   --ink:#1A1208;--ink-mid:#3D3020;--muted:#8C7B5E;--muted-mid:#5C4A30;
   --white:#FFFFFF;--radius:4px;
-  --shadow:0 2px 16px rgba(26,18,8,.07);
-  --shadow-hover:0 8px 36px rgba(26,18,8,.13);
+  --shadow:0 2px 16px rgba(26,18,8,.07);--shadow-hover:0 8px 36px rgba(26,18,8,.13);
 }
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'Barlow',sans-serif;background:var(--ivory);color:var(--ink);line-height:1.6;}
 a{color:inherit;text-decoration:none;}
-
-/* NAV */
 nav{background:var(--green);border-bottom:3px solid var(--gold);padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:200;box-shadow:0 3px 20px rgba(26,18,8,.25);}
-.logo{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:700;color:var(--ivory);letter-spacing:.3px;}
-.logo span{color:var(--gold);}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:700;color:var(--ivory);letter-spacing:.3px;}.logo span{color:var(--gold);}
 .nav-links{display:flex;align-items:center;gap:3px;}
 .nav-link{padding:8px 13px;border-radius:4px;font-size:.84rem;font-weight:500;color:rgba(247,243,236,.65);transition:all .18s;}
 .nav-link:hover{background:rgba(184,135,42,.18);color:var(--ivory);}
-.nav-cta{background:var(--gold);color:var(--green)!important;padding:9px 20px;border-radius:4px;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:.92rem;margin-left:8px;letter-spacing:.3px;}
+.nav-cta{background:var(--gold);color:var(--green)!important;padding:9px 20px;border-radius:4px;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:.92rem;margin-left:8px;}
 .nav-cta:hover{background:var(--gold-mid);}
-
-/* HERO */
 .hero{background:linear-gradient(160deg,var(--green-dark) 0%,var(--green) 60%,var(--green-mid) 100%);padding:72px 40px 80px;text-align:center;position:relative;overflow:hidden;}
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 50% 110%,rgba(184,135,42,.15) 0%,transparent 70%);}
 .hero-label{font-size:.65rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;position:relative;}
 .hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,3.4rem);font-weight:700;font-style:italic;color:white;margin-bottom:16px;line-height:1.15;position:relative;}
 .hero h1 span{color:var(--gold);}
-.hero-sub{font-size:.95rem;color:rgba(247,243,236,.65);max-width:600px;margin:0 auto 32px;line-height:1.75;position:relative;}
-.hero-cta{display:inline-block;background:var(--gold);color:var(--green);font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1.1rem;padding:14px 40px;border-radius:var(--radius);letter-spacing:.3px;transition:all .2s;position:relative;}
+.hero-sub{font-size:.95rem;color:rgba(247,243,236,.65);max-width:620px;margin:0 auto 32px;line-height:1.75;position:relative;}
+.hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative;}
+.hero-cta{display:inline-block;background:var(--gold);color:var(--green);font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1.1rem;padding:14px 36px;border-radius:var(--radius);letter-spacing:.3px;transition:all .2s;}
 .hero-cta:hover{background:var(--gold-mid);transform:translateY(-2px);}
-
-/* STATS */
+.hero-cta-outline{display:inline-block;background:transparent;color:white;border:2px solid rgba(247,243,236,.4);font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1.1rem;padding:12px 32px;border-radius:var(--radius);transition:all .2s;}
+.hero-cta-outline:hover{border-color:var(--gold);color:var(--gold);}
 .stats-bar{display:grid;grid-template-columns:repeat(4,1fr);background:var(--paper);border-bottom:3px solid var(--gold);}
 .stat-item{padding:24px 20px;text-align:center;border-right:1px solid var(--paper-border);}
 .stat-item:last-child{border-right:none;}
 .stat-num{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:700;color:var(--green);}
 .stat-label{font-size:.68rem;color:var(--muted);text-transform:uppercase;letter-spacing:.8px;margin-top:4px;}
-
-/* PRICING SECTION */
 .section{max-width:1100px;margin:0 auto;padding:60px 24px;}
 .section-title{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:700;color:var(--ink);text-align:center;margin-bottom:8px;}
-.section-sub{text-align:center;font-size:.88rem;color:var(--muted);margin-bottom:40px;}
+.section-sub{text-align:center;font-size:.88rem;color:var(--muted);margin-bottom:40px;line-height:1.7;}
 
-/* TOGGLE */
+/* ── PPC SECTION ───────────────────────────── */
+.ppc-section{background:var(--paper);border-top:3px solid var(--gold);border-bottom:3px solid var(--gold);}
+.ppc-inner{max-width:1100px;margin:0 auto;padding:60px 24px;}
+.ppc-title{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:700;color:var(--ink);text-align:center;margin-bottom:8px;}
+.ppc-sub{text-align:center;font-size:.88rem;color:var(--muted);margin-bottom:48px;max-width:640px;margin-left:auto;margin-right:auto;line-height:1.75;}
+.ppc-how{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:48px;}
+.ppc-step{background:white;border:1.5px solid var(--paper-border);border-radius:var(--radius);padding:28px 24px;text-align:center;position:relative;}
+.ppc-step-num{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--green);font-family:'Cormorant Garamond',serif;font-size:.85rem;font-weight:700;padding:4px 16px;border-radius:20px;}
+.ppc-step-icon{font-size:2.2rem;margin-bottom:12px;margin-top:8px;}
+.ppc-step-title{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:700;color:var(--ink);margin-bottom:8px;}
+.ppc-step-desc{font-size:.82rem;color:var(--muted-mid);line-height:1.65;}
+
+/* Rate cards */
+.rate-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-bottom:40px;}
+.rate-card{border-radius:var(--radius);padding:28px 24px;display:flex;align-items:center;gap:20px;}
+.rate-card.social{background:linear-gradient(135deg,#EFF6FF,#DBEAFE);border:1.5px solid #BFDBFE;}
+.rate-card.premium{background:linear-gradient(135deg,var(--gold-light),#FEF9C3);border:1.5px solid rgba(184,135,42,.4);}
+.rate-icon{font-size:2.6rem;flex-shrink:0;}
+.rate-info{}
+.rate-label{font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:var(--muted);margin-bottom:4px;}
+.rate-price{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:700;line-height:1;margin-bottom:4px;}
+.rate-card.social .rate-price{color:#1e40af;}
+.rate-card.premium .rate-price{color:var(--gold);}
+.rate-platforms{font-size:.8rem;color:var(--muted-mid);line-height:1.6;}
+.rate-platforms strong{color:var(--ink);}
+
+/* Live dashboard */
+.ppc-dash{background:var(--green-dark);border-radius:var(--radius);padding:32px;margin-top:8px;}
+.ppc-dash-title{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:700;color:var(--gold);margin-bottom:20px;display:flex;align-items:center;gap:10px;}
+.ppc-live-dot{width:8px;height:8px;background:#4ade80;border-radius:50%;animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.4;}}
+.dash-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px;}
+.dash-stat{background:rgba(247,243,236,.07);border:1px solid rgba(247,243,236,.12);border-radius:4px;padding:16px;text-align:center;}
+.dash-val{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:700;color:white;line-height:1;}
+.dash-lbl{font-size:.65rem;text-transform:uppercase;letter-spacing:.8px;color:rgba(247,243,236,.4);margin-top:4px;}
+.dash-table-wrap{background:rgba(247,243,236,.04);border:1px solid rgba(247,243,236,.1);border-radius:4px;overflow:hidden;}
+.dash-table{width:100%;border-collapse:collapse;font-size:.8rem;}
+.dash-table th{background:rgba(247,243,236,.08);color:var(--gold);font-weight:700;font-size:.65rem;text-transform:uppercase;letter-spacing:.6px;padding:10px 14px;text-align:left;}
+.dash-table td{padding:9px 14px;border-top:1px solid rgba(247,243,236,.06);color:rgba(247,243,236,.7);}
+.dash-table tr:hover td{background:rgba(247,243,236,.04);}
+.type-badge{display:inline-block;font-size:.65rem;font-weight:700;padding:2px 8px;border-radius:10px;text-transform:uppercase;letter-spacing:.4px;}
+.type-social{background:rgba(59,130,246,.25);color:#93c5fd;}
+.type-web{background:rgba(184,135,42,.25);color:var(--gold);}
+.type-ebay{background:rgba(234,179,8,.2);color:#fde047;}
+.type-whatnot{background:rgba(239,68,68,.2);color:#fca5a5;}
+.ppc-cta-row{display:flex;align-items:center;justify-content:space-between;margin-top:20px;flex-wrap:wrap;gap:12px;}
+.ppc-cta-text{font-size:.82rem;color:rgba(247,243,236,.55);}
+.ppc-cta-btn{background:var(--gold);color:var(--green);font-family:'Cormorant Garamond',serif;font-weight:700;font-size:.95rem;padding:11px 28px;border-radius:var(--radius);transition:all .2s;}
+.ppc-cta-btn:hover{background:var(--gold-mid);}
+
+/* ── COMPARISON CHART ───────────────────────── */
+.compare-section{background:white;border-top:1px solid var(--paper-border);}
+.compare-inner{max-width:1100px;margin:0 auto;padding:60px 24px;}
+.compare-table-wrap{overflow-x:auto;}
+.compare-table{width:100%;border-collapse:collapse;font-size:.85rem;}
+.compare-table thead th{padding:14px 16px;text-align:center;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.6px;border-bottom:2px solid var(--paper-border);}
+.compare-table thead th:first-child{text-align:left;width:220px;}
+.compare-table thead th.cf-col{background:var(--green-dark);color:var(--gold);border-radius:8px 8px 0 0;border-bottom:2px solid var(--gold);}
+.compare-table tbody tr{border-bottom:1px solid var(--paper-border);}
+.compare-table tbody tr:hover{background:var(--gold-light);}
+.compare-table tbody td{padding:14px 16px;text-align:center;color:var(--muted-mid);}
+.compare-table tbody td:first-child{text-align:left;font-weight:600;color:var(--ink);font-size:.85rem;}
+.compare-table tbody td.cf-col{background:rgba(27,67,50,.04);color:var(--green);font-weight:700;border-left:2px solid var(--gold);border-right:2px solid var(--gold);}
+.compare-table tfoot td.cf-col{background:var(--green-dark);border-radius:0 0 8px 8px;border:2px solid var(--gold);border-top:none;}
+.check{color:#16a34a;font-size:1rem;}
+.cross{color:#dc2626;font-size:1rem;}
+.partial{color:var(--gold);font-size:.8rem;font-weight:600;}
+.compare-table tfoot td{padding:16px;text-align:center;}
+.compare-btn{display:inline-block;background:var(--gold);color:var(--green);font-family:'Cormorant Garamond',serif;font-weight:700;font-size:.9rem;padding:10px 24px;border-radius:var(--radius);}
+.compare-note{text-align:center;font-size:.75rem;color:var(--muted);margin-top:14px;font-style:italic;}
+
+/* ── PRICING SECTION ────────────────────────── */
 .toggle-row{display:flex;justify-content:center;gap:0;margin-bottom:40px;}
-.toggle-btn{font-size:.8rem;font-weight:700;padding:10px 28px;border:2px solid var(--paper-border);background:var(--paper);color:var(--muted-mid);cursor:pointer;transition:all .15s;font-family:'Barlow',sans-serif;letter-spacing:.3px;}
+.toggle-btn{font-size:.8rem;font-weight:700;padding:10px 28px;border:2px solid var(--paper-border);background:var(--paper);color:var(--muted-mid);cursor:pointer;transition:all .15s;font-family:'Barlow',sans-serif;}
 .toggle-btn:first-child{border-radius:4px 0 0 4px;}
 .toggle-btn:last-child{border-radius:0 4px 4px 0;}
 .toggle-btn.active{background:var(--green);color:white;border-color:var(--green);}
 .toggle-btn:hover:not(.active){background:var(--green-light);border-color:var(--green-light);color:var(--green);}
-
-/* PRICING GRID */
 .pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
 .price-card{background:var(--paper);border:1.5px solid var(--paper-border);border-radius:var(--radius);padding:32px 28px;transition:all .2s;position:relative;}
 .price-card:hover{border-color:rgba(184,135,42,.5);box-shadow:var(--shadow-hover);transform:translateY(-3px);}
 .price-card.featured-plan{border:2px solid var(--gold);background:var(--gold-light);}
-.plan-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--green);font-family:'Cormorant Garamond',serif;font-size:.82rem;font-weight:700;letter-spacing:.5px;padding:4px 18px;border-radius:20px;white-space:nowrap;}
+.plan-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--green);font-family:'Cormorant Garamond',serif;font-size:.82rem;font-weight:700;padding:4px 18px;border-radius:20px;white-space:nowrap;}
 .plan-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:700;color:var(--ink);margin-bottom:6px;}
 .plan-price{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:700;color:var(--green);line-height:1.1;margin-bottom:4px;}
 .plan-price sup{font-size:1.2rem;vertical-align:super;}
 .plan-price .per{font-size:.85rem;font-family:'Barlow',sans-serif;color:var(--muted);font-weight:400;}
-.plan-coming{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:700;color:var(--muted);line-height:1.1;margin-bottom:4px;font-style:italic;}
+.plan-coming{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:700;color:var(--muted);font-style:italic;line-height:1.1;margin-bottom:4px;}
 .plan-desc{font-size:.82rem;color:var(--muted-mid);margin:12px 0 20px;line-height:1.65;}
 .plan-features{display:flex;flex-direction:column;gap:8px;margin-bottom:24px;}
 .plan-feature{font-size:.82rem;color:var(--ink-mid);display:flex;align-items:flex-start;gap:8px;}
 .plan-feature::before{content:'✓';color:var(--gold);font-weight:700;flex-shrink:0;margin-top:1px;}
 .plan-feature.locked{color:var(--muted);font-style:italic;}
 .plan-feature.locked::before{content:'🔒';font-size:.7rem;}
-.plan-btn{display:block;text-align:center;background:var(--green);color:white;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1rem;letter-spacing:.3px;padding:12px;border-radius:var(--radius);transition:all .15s;}
+.plan-btn{display:block;text-align:center;background:var(--green);color:white;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1rem;padding:12px;border-radius:var(--radius);transition:all .15s;}
 .plan-btn:hover{background:var(--green-mid);}
 .plan-btn.gold{background:var(--gold);color:var(--green);}
 .plan-btn.gold:hover{background:var(--gold-mid);}
 .plan-btn.coming{background:var(--paper-border);color:var(--muted);cursor:default;}
-.plan-btn.coming:hover{background:var(--paper-border);transform:none;}
-.locked-note{font-size:.72rem;color:var(--muted);text-align:center;margin-top:10px;font-style:italic;}
 
-/* FEATURED LISTING UNLOCK BOX */
-.unlock-box{background:linear-gradient(135deg,var(--green) 0%,var(--green-mid) 100%);border-radius:var(--radius);padding:28px 32px;margin:32px 0 8px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;}
-.unlock-text h3{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:700;color:var(--gold);margin-bottom:4px;}
-.unlock-text p{font-size:.82rem;color:rgba(247,243,236,.7);line-height:1.6;}
-.unlock-btn{background:var(--gold);color:var(--green);font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1rem;padding:12px 32px;border-radius:var(--radius);white-space:nowrap;flex-shrink:0;transition:all .2s;}
-.unlock-btn:hover{background:var(--gold-mid);}
-
-/* AUDIENCE */
+/* ── AUDIENCE ───────────────────────────────── */
 .audience-section{background:var(--green-dark);padding:64px 24px;}
 .audience-inner{max-width:1100px;margin:0 auto;}
 .aud-title{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:700;font-style:italic;color:var(--gold);text-align:center;margin-bottom:40px;}
@@ -104,7 +157,7 @@ nav{background:var(--green);border-bottom:3px solid var(--gold);padding:0 32px;d
 .aud-name{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:700;color:var(--gold);margin-bottom:8px;}
 .aud-desc{font-size:.8rem;color:rgba(247,243,236,.55);line-height:1.65;}
 
-/* INQUIRY FORM */
+/* ── FORM ───────────────────────────────────── */
 .inquiry-section{max-width:760px;margin:0 auto;padding:60px 24px 80px;}
 .inq-title{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:700;color:var(--ink);text-align:center;margin-bottom:8px;}
 .inq-sub{text-align:center;font-size:.86rem;color:var(--muted);margin-bottom:32px;}
@@ -115,27 +168,21 @@ nav{background:var(--green);border-bottom:3px solid var(--gold);padding:0 32px;d
 .form-input,.form-select,.form-textarea{width:100%;padding:10px 14px;border:1.5px solid var(--paper-border);border-radius:var(--radius);font-size:.86rem;font-family:'Barlow',sans-serif;color:var(--ink);background:white;outline:none;transition:border-color .15s;}
 .form-input:focus,.form-select:focus,.form-textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(184,135,42,.1);}
 .form-textarea{resize:vertical;min-height:90px;line-height:1.6;}
-.inq-btn{width:100%;background:var(--gold);color:var(--green);font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:700;letter-spacing:.5px;padding:16px;border-radius:var(--radius);border:none;cursor:pointer;margin-top:8px;transition:all .18s;}
-.inq-btn:hover{background:var(--gold-mid);transform:translateY(-1px);}
-.inq-btn:disabled{opacity:.6;cursor:not-allowed;transform:none;}
+.inq-btn{width:100%;background:var(--gold);color:var(--green);font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:700;padding:16px;border-radius:var(--radius);border:none;cursor:pointer;margin-top:8px;transition:all .18s;}
+.inq-btn:hover{background:var(--gold-mid);}
+.inq-btn:disabled{opacity:.6;cursor:not-allowed;}
 .success-msg{display:none;background:var(--green-light);border:1.5px solid var(--green-mid);border-radius:var(--radius);padding:20px;text-align:center;font-size:.9rem;color:var(--green);margin-top:16px;}
-
-/* FOOTER */
 footer{background:var(--green-dark);padding:48px 32px 22px;}
 .footer-inner{max-width:1200px;margin:0 auto;}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:28px;margin-bottom:28px;}
-.footer-brand{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:700;color:var(--ivory);margin-bottom:8px;}
-.footer-brand span{color:var(--gold);}
+.footer-brand{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:700;color:var(--ivory);margin-bottom:8px;}.footer-brand span{color:var(--gold);}
 .footer-tagline{font-size:.76rem;color:rgba(247,243,236,.4);line-height:1.6;}
 .footer-col-title{font-size:.58rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--gold);margin-bottom:10px;}
-.footer-links{display:flex;flex-direction:column;gap:6px;}
-.footer-links a{font-size:.8rem;color:rgba(247,243,236,.5);}
-.footer-links a:hover{color:var(--ivory);}
+.footer-links{display:flex;flex-direction:column;gap:6px;}.footer-links a{font-size:.8rem;color:rgba(247,243,236,.5);}.footer-links a:hover{color:var(--ivory);}
 .footer-bottom{border-top:1px solid rgba(247,243,236,.07);padding-top:18px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
 .footer-copy{font-size:.7rem;color:rgba(247,243,236,.3);}
-
-@media(max-width:900px){.pricing-grid{grid-template-columns:1fr;}.aud-grid{grid-template-columns:1fr 1fr;}.stats-bar{grid-template-columns:1fr 1fr;}}
-@media(max-width:600px){nav{padding:0 14px;}.nav-link:not(.nav-cta){display:none;}.hero{padding:48px 16px 56px;}.section{padding:40px 14px;}.form-row{grid-template-columns:1fr;}.inquiry-card{padding:20px;}.aud-grid{grid-template-columns:1fr;}.footer-grid{grid-template-columns:1fr 1fr;}.unlock-box{flex-direction:column;}}
+@media(max-width:900px){.pricing-grid,.ppc-how,.aud-grid,.rate-grid{grid-template-columns:1fr;}.dash-grid{grid-template-columns:1fr 1fr;}.stats-bar{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){nav{padding:0 14px;}.nav-link:not(.nav-cta){display:none;}.hero{padding:48px 16px 56px;}.section,.ppc-inner,.compare-inner{padding:36px 14px;}.form-row{grid-template-columns:1fr;}.inquiry-card{padding:20px;}.footer-grid{grid-template-columns:1fr 1fr;}}
 </style>
 </head>
 <body>
@@ -155,126 +202,312 @@ footer{background:var(--green-dark);padding:48px 32px 22px;}
 <!-- HERO -->
 <div class="hero">
   <div class="hero-label">Partner with CollectibleFind</div>
-  <h1>Reach <span>Thousands of Active</span><br>Collectors Every Month</h1>
-  <p class="hero-sub">CollectibleFind is the #1 directory of collectibles influencers — connecting grading services, hobby suppliers, marketplaces, and brands with serious collectors across every category.</p>
-  <a href="#inquiry" class="hero-cta">Request a Media Kit →</a>
+  <h1>Reach <span>Active Collectors</span><br>— Only Pay When They Click</h1>
+  <p class="hero-sub">The #1 collectibles influencer directory. Pay-per-click advertising from $0.25/click. Only pay for real, engaged collector traffic — no impressions, no wasted spend.</p>
+  <div class="hero-btns">
+    <a href="#ppc" class="hero-cta">Start Pay-Per-Click →</a>
+    <a href="#inquiry" class="hero-cta-outline">Request Media Kit</a>
+  </div>
 </div>
 
 <!-- STATS -->
 <div class="stats-bar">
   <div class="stat-item"><div class="stat-num">483+</div><div class="stat-label">Verified Creators Listed</div></div>
   <div class="stat-item"><div class="stat-num">15</div><div class="stat-label">Collectible Categories</div></div>
-  <div class="stat-item"><div class="stat-num">94M+</div><div class="stat-label">Combined Audience Reached</div></div>
-  <div class="stat-item"><div class="stat-num">29</div><div class="stat-label">Pages Indexed by Google</div></div>
+  <div class="stat-item"><div class="stat-num">94M+</div><div class="stat-label">Combined Audience</div></div>
+  <div class="stat-item"><div class="stat-num">$0.25</div><div class="stat-label">Starting Cost Per Click</div></div>
+</div>
+
+<!-- PPC SECTION -->
+<div class="ppc-section" id="ppc">
+  <div class="ppc-inner">
+    <div class="ppc-title">Pay-Per-Click Advertising</div>
+    <p class="ppc-sub">Only pay when a collector actively clicks through to your platform. No monthly minimums, no commitments. Flat-rate CPC pricing — the most transparent advertising model in the hobby space.</p>
+
+    <div class="ppc-how">
+      <div class="ppc-step">
+        <div class="ppc-step-num">Step 1</div>
+        <div class="ppc-step-icon">📋</div>
+        <div class="ppc-step-title">Get Listed</div>
+        <div class="ppc-step-desc">Submit your creator profile with your platform links — YouTube, Instagram, TikTok, website, eBay store, or Whatnot channel. Free standard listing included.</div>
+      </div>
+      <div class="ppc-step">
+        <div class="ppc-step-num">Step 2</div>
+        <div class="ppc-step-icon">👆</div>
+        <div class="ppc-step-title">Collectors Click</div>
+        <div class="ppc-step-desc">Collectors browsing the directory click your platform links. Every click is tracked in real time. Social link clicks are $0.25. Website, eBay, and Whatnot clicks are $0.50.</div>
+      </div>
+      <div class="ppc-step">
+        <div class="ppc-step-num">Step 3</div>
+        <div class="ppc-step-icon">📊</div>
+        <div class="ppc-step-title">Pay for Results</div>
+        <div class="ppc-step-desc">Receive a monthly invoice for clicks delivered. Track performance in your analytics dashboard. Scale your spend up or down based on results — no long-term contracts.</div>
+      </div>
+    </div>
+
+    <div class="rate-grid">
+      <div class="rate-card social">
+        <div class="rate-icon">📱</div>
+        <div class="rate-info">
+          <div class="rate-label">Social Platform Clicks</div>
+          <div class="rate-price">$0.25 <span style="font-size:1rem;font-family:'Barlow',sans-serif;color:#1e40af;font-weight:400;">/ click</span></div>
+          <div class="rate-platforms"><strong>Platforms:</strong> YouTube • Instagram • TikTok<br>Engaged collector audience clicking to discover new creators</div>
+        </div>
+      </div>
+      <div class="rate-card premium">
+        <div class="rate-icon">🛒</div>
+        <div class="rate-info">
+          <div class="rate-label">Commerce & Website Clicks</div>
+          <div class="rate-price">$0.50 <span style="font-size:1rem;font-family:'Barlow',sans-serif;color:var(--gold);font-weight:400;">/ click</span></div>
+          <div class="rate-platforms"><strong>Platforms:</strong> Website • eBay Store • Whatnot Channel<br>High-intent buyers clicking to shop — highest conversion traffic</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Live click dashboard -->
+    <div class="ppc-dash">
+      <div class="ppc-dash-title">
+        <span class="ppc-live-dot"></span>
+        Live Click Dashboard — Session Activity
+      </div>
+      <div class="dash-grid">
+        <div class="dash-stat"><div class="dash-val" id="dash-total-clicks">0</div><div class="dash-lbl">Total Clicks</div></div>
+        <div class="dash-stat"><div class="dash-val" id="dash-social-clicks">0</div><div class="dash-lbl">Social Clicks</div></div>
+        <div class="dash-stat"><div class="dash-val" id="dash-commerce-clicks">0</div><div class="dash-lbl">Commerce Clicks</div></div>
+        <div class="dash-stat"><div class="dash-val" id="dash-total-spend">$0.00</div><div class="dash-lbl">Session Spend</div></div>
+      </div>
+      <div class="dash-table-wrap">
+        <table class="dash-table">
+          <thead><tr><th>Creator</th><th>Platform</th><th>Type</th><th>Rate</th><th>Time</th></tr></thead>
+          <tbody id="dash-tbody"><tr><td colspan="5" style="text-align:center;color:rgba(247,243,236,.3);padding:20px;">No clicks yet — browse the directory and click some profiles to see live tracking</td></tr></tbody>
+        </table>
+      </div>
+      <div class="ppc-cta-row">
+        <div class="ppc-cta-text">* Dashboard shows session clicks only. Full monthly reporting available with a paid plan.</div>
+        <a href="#inquiry" class="ppc-cta-btn">Start a PPC Campaign →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MARKET COMPARISON -->
+<div class="compare-section">
+  <div class="compare-inner">
+    <div class="section-title">How CollectibleFind Compares</div>
+    <p class="section-sub">See how our pay-per-click directory advertising stacks up against other options available to collectibles brands and creators.</p>
+    <div class="compare-table-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th class="cf-col">⭐ CollectibleFind</th>
+            <th>Google Ads</th>
+            <th>Instagram Ads</th>
+            <th>eBay Promoted</th>
+            <th>Other Directories</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Collector-specific audience</td>
+            <td class="cf-col"><span class="check">✓</span> 100% collectibles</td>
+            <td><span class="partial">~</span> Broad targeting</td>
+            <td><span class="partial">~</span> Interest targeting</td>
+            <td><span class="check">✓</span> eBay buyers only</td>
+            <td><span class="partial">~</span> Varies</td>
+          </tr>
+          <tr>
+            <td>Pay-per-click model</td>
+            <td class="cf-col"><span class="check">✓</span> Flat $0.25–$0.50</td>
+            <td><span class="check">✓</span> $2–$15+ per click</td>
+            <td><span class="cross">✗</span> CPM / impression</td>
+            <td><span class="check">✓</span> % of sale</td>
+            <td><span class="cross">✗</span> Flat monthly fee</td>
+          </tr>
+          <tr>
+            <td>Cost per click</td>
+            <td class="cf-col" style="color:var(--gold);font-size:1rem;">$0.25 – $0.50</td>
+            <td>$2.00 – $15.00</td>
+            <td>$0.50 – $3.00 CPM</td>
+            <td>2–15% of sale</td>
+            <td>N/A (flat fee)</td>
+          </tr>
+          <tr>
+            <td>No monthly minimum</td>
+            <td class="cf-col"><span class="check">✓</span> Pay as you go</td>
+            <td><span class="partial">~</span> Budget required</td>
+            <td><span class="partial">~</span> Min. budget</td>
+            <td><span class="check">✓</span> Per listing</td>
+            <td><span class="cross">✗</span> Monthly required</td>
+          </tr>
+          <tr>
+            <td>Free standard listing</td>
+            <td class="cf-col"><span class="check">✓</span> Always free</td>
+            <td><span class="cross">✗</span> Pay to appear</td>
+            <td><span class="cross">✗</span> Pay to appear</td>
+            <td><span class="partial">~</span> Free basic</td>
+            <td><span class="partial">~</span> Some free tiers</td>
+          </tr>
+          <tr>
+            <td>eBay & Whatnot link support</td>
+            <td class="cf-col"><span class="check">✓</span> Featured plans</td>
+            <td><span class="cross">✗</span> External only</td>
+            <td><span class="cross">✗</span> No commerce links</td>
+            <td><span class="check">✓</span> eBay only</td>
+            <td><span class="cross">✗</span> Rarely</td>
+          </tr>
+          <tr>
+            <td>Real-time click tracking</td>
+            <td class="cf-col"><span class="check">✓</span> Live dashboard</td>
+            <td><span class="check">✓</span> Google Analytics</td>
+            <td><span class="check">✓</span> Meta Analytics</td>
+            <td><span class="check">✓</span> Seller Hub</td>
+            <td><span class="cross">✗</span> Rarely</td>
+          </tr>
+          <tr>
+            <td>Category-specific placement</td>
+            <td class="cf-col"><span class="check">✓</span> 15 niche hubs</td>
+            <td><span class="partial">~</span> Keyword targeting</td>
+            <td><span class="partial">~</span> Interest only</td>
+            <td><span class="cross">✗</span> All eBay</td>
+            <td><span class="partial">~</span> Generic only</td>
+          </tr>
+          <tr>
+            <td>SEO / organic visibility</td>
+            <td class="cf-col"><span class="check">✓</span> 29 indexed pages</td>
+            <td><span class="cross">✗</span> Paid only</td>
+            <td><span class="cross">✗</span> Paid only</td>
+            <td><span class="cross">✗</span> eBay search only</td>
+            <td><span class="partial">~</span> Low DA</td>
+          </tr>
+          <tr>
+            <td>Newsletter advertising</td>
+            <td class="cf-col"><span class="check">✓</span> $99/send</td>
+            <td><span class="cross">✗</span> Not offered</td>
+            <td><span class="cross">✗</span> Not offered</td>
+            <td><span class="cross">✗</span> Not offered</td>
+            <td><span class="partial">~</span> Rarely</td>
+          </tr>
+          <tr>
+            <td>Setup complexity</td>
+            <td class="cf-col"><span class="check">✓</span> 2 minutes</td>
+            <td><span class="cross">✗</span> Complex / technical</td>
+            <td><span class="cross">✗</span> Moderate</td>
+            <td><span class="partial">~</span> Moderate</td>
+            <td><span class="check">✓</span> Simple</td>
+          </tr>
+          <tr>
+            <td>Typical monthly spend</td>
+            <td class="cf-col" style="color:var(--gold);font-size:.95rem;">$0 – $500</td>
+            <td>$500 – $5,000+</td>
+            <td>$300 – $3,000+</td>
+            <td>2–15% revenue</td>
+            <td>$50 – $300 flat</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td></td>
+            <td class="cf-col"><a href="#inquiry" class="compare-btn">Get Started →</a></td>
+            <td></td><td></td><td></td><td></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <p class="compare-note">* Pricing estimates based on publicly available data as of March 2025. Actual costs may vary by market and targeting.</p>
+  </div>
 </div>
 
 <!-- PRICING -->
 <div class="section">
-  <div class="section-title">Advertising & Partnership Options</div>
-  <div class="section-sub">Flexible placements for indie sellers, hobby brands, and enterprise partners of all sizes</div>
-
+  <div class="section-title">Subscription Plans</div>
+  <p class="section-sub">Combine pay-per-click with a subscription plan for maximum visibility — or start free and upgrade anytime.</p>
   <div class="toggle-row">
     <button class="toggle-btn active" onclick="setTier('local',this)">Local / Creator</button>
     <button class="toggle-btn" onclick="setTier('regional',this)">Bolt-on Marketing</button>
     <button class="toggle-btn" onclick="setTier('national',this)">Enterprise</button>
   </div>
 
-  <!-- LOCAL / CREATOR -->
   <div id="pricing-local" class="pricing-grid">
     <div class="price-card">
       <div class="plan-name">Standard Listing</div>
       <div class="plan-price">Free <span class="per">/ always</span></div>
-      <div class="plan-desc">Get your creator profile listed in the directory with all platform links included. Free forever — no credit card required.</div>
+      <div class="plan-desc">Get listed free. Pay-per-click charges apply for social links ($0.25) when collectors click your platforms.</div>
       <div class="plan-features">
         <div class="plan-feature">Profile in the directory</div>
-        <div class="plan-feature">YouTube, Instagram & TikTok links</div>
+        <div class="plan-feature">YouTube, Instagram & TikTok links ($0.25/click)</div>
         <div class="plan-feature">Searchable by category & platform</div>
         <div class="plan-feature">Bio & follower count displayed</div>
-        <div class="plan-feature locked">Whatnot & eBay links — Featured only</div>
-        <div class="plan-feature locked">Homepage feed placement — Featured only</div>
+        <div class="plan-feature locked">Website / eBay / Whatnot links — Featured only</div>
+        <div class="plan-feature locked">Homepage feed priority — Featured only</div>
       </div>
       <a href="submit.html" class="plan-btn">Get Listed Free →</a>
-      <div class="locked-note">🔒 Whatnot & eBay links unlock with Featured Listing</div>
     </div>
-
     <div class="price-card featured-plan">
       <div class="plan-badge">Most Popular</div>
       <div class="plan-name">Featured Listing</div>
       <div class="plan-price"><sup>$</sup>49 <span class="per">/ month</span></div>
-      <div class="plan-desc">Stand out at the top of your category with a gold badge, priority placement, and full platform link visibility including Whatnot and eBay.</div>
+      <div class="plan-desc">Priority placement + all platform links unlocked. PPC clicks still apply on top of the monthly fee.</div>
       <div class="plan-features">
         <div class="plan-feature">Everything in Standard</div>
         <div class="plan-feature">⭐ Gold "Featured" badge</div>
-        <div class="plan-feature">Priority ranking in your category</div>
+        <div class="plan-feature">Priority ranking in category</div>
         <div class="plan-feature">Top of homepage feed</div>
-        <div class="plan-feature">✅ Whatnot & eBay links unlocked</div>
-        <div class="plan-feature">Email notification to subscribers</div>
+        <div class="plan-feature">✅ Website links unlocked ($0.50/click)</div>
+        <div class="plan-feature">✅ eBay & Whatnot links unlocked ($0.50/click)</div>
         <div class="plan-feature">Monthly click analytics report</div>
       </div>
       <a href="#inquiry" class="plan-btn gold">Get Featured →</a>
     </div>
-
     <div class="price-card">
       <div class="plan-name">Category Spotlight</div>
       <div class="plan-price"><sup>$</sup>99 <span class="per">/ month</span></div>
-      <div class="plan-desc">Your brand featured at the top of a specific category page with custom messaging and a direct link to your site or product.</div>
+      <div class="plan-desc">Your brand featured at the top of one category page. Great for grading services, hobby shops, and supplies brands.</div>
       <div class="plan-features">
         <div class="plan-feature">Featured header on category hub page</div>
         <div class="plan-feature">Custom 2–3 sentence spotlight copy</div>
-        <div class="plan-feature">Direct link to your site or offer</div>
-        <div class="plan-feature">✅ Whatnot & eBay links included</div>
+        <div class="plan-feature">Direct link to your site ($0.50/click)</div>
+        <div class="plan-feature">✅ All links unlocked</div>
         <div class="plan-feature">Monthly analytics report</div>
       </div>
       <a href="#inquiry" class="plan-btn">Inquire →</a>
     </div>
   </div>
 
-  <!-- Unlock box shown under Local tier -->
-  <div class="unlock-box" id="unlock-box">
-    <div class="unlock-text">
-      <h3>🔒 Unlock Whatnot & eBay Links</h3>
-      <p>Whatnot and eBay platform links are only displayed on Featured Listing profiles ($49/month). Upgrade to show your full selling presence to collectors browsing the directory.</p>
-    </div>
-    <a href="#inquiry" class="unlock-btn">Upgrade to Featured →</a>
-  </div>
-
-  <!-- BOLT-ON MARKETING -->
   <div id="pricing-regional" class="pricing-grid" style="display:none">
     <div class="price-card">
       <div class="plan-name">Newsletter Sponsorship</div>
       <div class="plan-price"><sup>$</sup>99 <span class="per">/ send</span></div>
-      <div class="plan-desc">Sponsored placement in the CollectibleFind newsletter sent to collectors and enthusiasts across all 15 categories.</div>
+      <div class="plan-desc">Sponsored placement in the CollectibleFind newsletter reaching collectors across all 15 categories.</div>
       <div class="plan-features">
         <div class="plan-feature">Logo + tagline in newsletter header</div>
         <div class="plan-feature">50-word sponsored blurb</div>
         <div class="plan-feature">Direct link to your site or offer</div>
         <div class="plan-feature">Open rate & click report included</div>
-        <div class="plan-feature">Collector audience — high intent</div>
+        <div class="plan-feature">High-intent collector audience</div>
       </div>
       <a href="#inquiry" class="plan-btn">Inquire →</a>
     </div>
-
     <div class="price-card featured-plan">
       <div class="plan-badge">Best Value</div>
       <div class="plan-name">Multi-Category Bundle</div>
       <div class="plan-price"><sup>$</sup>199 <span class="per">/ month</span></div>
-      <div class="plan-desc">Featured placement across 3 category hub pages plus newsletter inclusion — maximum coverage across your target collector segments.</div>
+      <div class="plan-desc">Featured placement across 3 category pages plus newsletter inclusion. PPC on top.</div>
       <div class="plan-features">
         <div class="plan-feature">Featured on 3 category hub pages</div>
         <div class="plan-feature">Monthly newsletter spot included</div>
         <div class="plan-feature">⭐ Gold badge in directory</div>
-        <div class="plan-feature">✅ Whatnot & eBay links unlocked</div>
+        <div class="plan-feature">✅ All links unlocked (PPC rates apply)</div>
         <div class="plan-feature">Blog mention (1x/month)</div>
-        <div class="plan-feature">Monthly analytics dashboard access</div>
+        <div class="plan-feature">Analytics dashboard access</div>
       </div>
       <a href="#inquiry" class="plan-btn gold">Inquire →</a>
     </div>
-
     <div class="price-card">
       <div class="plan-badge" style="background:var(--muted);color:white;">Coming Soon</div>
       <div class="plan-name">Content Partnership</div>
       <div class="plan-coming">Coming Soon</div>
-      <div class="plan-desc">Dedicated blog content, category partnership, and long-term brand integration across the CollectibleFind platform. Join the waitlist to be notified first.</div>
+      <div class="plan-desc">Dedicated blog content, category partnership, and long-term brand integration. Join the waitlist to be first.</div>
       <div class="plan-features">
         <div class="plan-feature">1 sponsored blog post / month</div>
         <div class="plan-feature">Gear & supplies section placement</div>
@@ -286,27 +519,25 @@ footer{background:var(--green-dark);padding:48px 32px 22px;}
     </div>
   </div>
 
-  <!-- ENTERPRISE -->
   <div id="pricing-national" class="pricing-grid" style="display:none">
     <div class="price-card">
       <div class="plan-name">Site-Wide Banner</div>
       <div class="plan-price"><sup>$</sup>999 <span class="per">/ month</span></div>
-      <div class="plan-desc">Your brand displayed across the entire CollectibleFind site with rotating banner placement on every page and category.</div>
+      <div class="plan-desc">Your brand displayed across the entire CollectibleFind site with rotating banner placement on every page.</div>
       <div class="plan-features">
         <div class="plan-feature">Sitewide display placement</div>
         <div class="plan-feature">All 15 category pages included</div>
-        <div class="plan-feature">Monthly impression report</div>
+        <div class="plan-feature">Monthly impression + click report</div>
+        <div class="plan-feature">✅ All PPC links unlocked</div>
         <div class="plan-feature">Custom ad creative guidance</div>
-        <div class="plan-feature">✅ Whatnot & eBay links unlocked</div>
       </div>
       <a href="#inquiry" class="plan-btn">Inquire →</a>
     </div>
-
     <div class="price-card featured-plan">
       <div class="plan-badge">Enterprise</div>
       <div class="plan-name">Full Partnership</div>
       <div class="plan-price"><sup>$</sup>2,500 <span class="per">/ month</span></div>
-      <div class="plan-desc">Complete brand integration across the CollectibleFind directory, newsletter, blog, gear store, and social — the ultimate collector audience partnership.</div>
+      <div class="plan-desc">Complete brand integration across directory, newsletter, blog, and social. The ultimate collector audience partnership.</div>
       <div class="plan-features">
         <div class="plan-feature">All Bolt-on Marketing benefits</div>
         <div class="plan-feature">Homepage hero placement</div>
@@ -317,11 +548,10 @@ footer{background:var(--green-dark);padding:48px 32px 22px;}
       </div>
       <a href="#inquiry" class="plan-btn gold">Contact Us →</a>
     </div>
-
     <div class="price-card">
       <div class="plan-name">Custom Package</div>
       <div class="plan-price">Custom</div>
-      <div class="plan-desc">Build a bespoke advertising package tailored to your brand's goals, budget, and target collector segment.</div>
+      <div class="plan-desc">Build a bespoke package tailored to your brand's goals, budget, and target collector segment.</div>
       <div class="plan-features">
         <div class="plan-feature">Any combination of placements</div>
         <div class="plan-feature">Affiliate / CPA deal structures</div>
@@ -351,8 +581,8 @@ footer{background:var(--green-dark);padding:48px 32px 22px;}
 
 <!-- INQUIRY FORM -->
 <div class="inquiry-section" id="inquiry">
-  <div class="inq-title">Send a Partnership Inquiry</div>
-  <div class="inq-sub">Tell us about your brand and goals — we'll get back to you within 1–2 business days.</div>
+  <div class="inq-title">Start Your Campaign</div>
+  <div class="inq-sub">Tell us about your brand and goals — we'll respond within 1–2 business days.</div>
   <div class="inquiry-card">
     <div class="form-row">
       <div class="form-group"><label class="form-label">First Name *</label><input type="text" class="form-input" id="i-fname" placeholder="First name"></div>
@@ -364,20 +594,22 @@ footer{background:var(--green-dark);padding:48px 32px 22px;}
     </div>
     <div class="form-row">
       <div class="form-group">
-        <label class="form-label">Budget Range</label>
+        <label class="form-label">Monthly Budget</label>
         <select class="form-select" id="i-budget">
           <option value="">Select range</option>
-          <option>Under $500/mo</option>
+          <option>PPC only (pay as you go)</option>
+          <option>Under $100/mo</option>
+          <option>$100 – $500/mo</option>
           <option>$500 – $1,000/mo</option>
           <option>$1,000 – $2,500/mo</option>
-          <option>$2,500 – $5,000/mo</option>
-          <option>$5,000+/mo</option>
+          <option>$2,500+/mo</option>
         </select>
       </div>
       <div class="form-group">
         <label class="form-label">Partnership Type</label>
         <select class="form-select" id="i-type">
           <option value="">Select type</option>
+          <option>Pay-Per-Click Only</option>
           <option>Featured Listing ($49/mo)</option>
           <option>Category Spotlight ($99/mo)</option>
           <option>Newsletter Sponsorship ($99/send)</option>
@@ -390,7 +622,7 @@ footer{background:var(--green-dark);padding:48px 32px 22px;}
       </div>
     </div>
     <div class="form-group"><label class="form-label">What would you like to promote?</label><textarea class="form-textarea" id="i-message" placeholder="Tell us about your brand, product, or service and what you're hoping to achieve..."></textarea></div>
-    <button class="inq-btn" id="inq-btn" onclick="submitInquiry()">Send Partnership Inquiry →</button>
+    <button class="inq-btn" id="inq-btn" onclick="submitInquiry()">Send Campaign Inquiry →</button>
     <div class="success-msg" id="inq-success"><strong>🎉 Inquiry Received!</strong><br>Our team will be in touch within 1–2 business days to discuss your campaign.</div>
   </div>
 </div>
@@ -411,17 +643,46 @@ footer{background:var(--green-dark);padding:48px 32px 22px;}
 </footer>
 
 <script>
-const SUPABASE_URL='https://vtlgfwldogsdueiahidp.supabase.co';
-const SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ0bGdmd2xkb2dzZHVlaWFoaWRwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMwMjYyOTgsImV4cCI6MjA4ODYwMjI5OH0.L3rNdeNh_282W1BRsYBc64-64_l8bgHG6kMGSU4C048';
+const SB_URL='https://vtlgfwldogsdueiahidp.supabase.co';
+const SB_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ0bGdmd2xkb2dzZHVlaWFoaWRwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMwMjYyOTgsImV4cCI6MjA4ODYwMjI5OH0.L3rNdeNh_282W1BRsYBc64-64_l8bgHG6kMGSU4C048';
+
+// PPC Dashboard
+const ppcSession={totalClicks:0,socialClicks:0,commerceClicks:0,totalSpend:0,log:[]};
+
+function updateDash(name,url,linkType,rate){
+  ppcSession.totalClicks++;
+  ppcSession.totalSpend+=rate;
+  if(linkType==='social')ppcSession.socialClicks++;
+  else ppcSession.commerceClicks++;
+  ppcSession.log.unshift({name,url,linkType,rate,time:new Date().toLocaleTimeString()});
+  document.getElementById('dash-total-clicks').textContent=ppcSession.totalClicks;
+  document.getElementById('dash-social-clicks').textContent=ppcSession.socialClicks;
+  document.getElementById('dash-commerce-clicks').textContent=ppcSession.commerceClicks;
+  document.getElementById('dash-total-spend').textContent='$'+ppcSession.totalSpend.toFixed(2);
+  const tbody=document.getElementById('dash-tbody');
+  const typeMap={social:'type-social',web:'type-web',ebay:'type-ebay',whatnot:'type-whatnot'};
+  tbody.innerHTML=ppcSession.log.slice(0,8).map(r=>`
+    <tr>
+      <td>${r.name}</td>
+      <td style="color:rgba(247,243,236,.5);font-size:.75rem">${r.url.replace('https://','').substring(0,30)}...</td>
+      <td><span class="type-badge ${typeMap[r.linkType]||'type-social'}">${r.linkType}</span></td>
+      <td style="color:var(--gold);font-weight:700">$${r.rate.toFixed(2)}</td>
+      <td style="color:rgba(247,243,236,.4)">${r.time}</td>
+    </tr>`).join('');
+}
+
+// Listen for PPC events from directory (cross-tab via localStorage)
+window.addEventListener('storage',e=>{
+  if(e.key==='cf_ppc_click'&&e.newValue){
+    try{const d=JSON.parse(e.newValue);updateDash(d.name,d.url,d.linkType,d.rate);}catch(err){}
+  }
+});
 
 function setTier(tier,el){
   document.querySelectorAll('.toggle-btn').forEach(b=>b.classList.remove('active'));
   if(el)el.classList.add('active');
   document.querySelectorAll('[id^="pricing-"]').forEach(d=>d.style.display='none');
   document.getElementById('pricing-'+tier).style.display='grid';
-  // Show unlock box only on local/creator tier
-  const box=document.getElementById('unlock-box');
-  if(box)box.style.display=tier==='local'?'flex':'none';
 }
 
 async function submitInquiry(){
@@ -432,28 +693,25 @@ async function submitInquiry(){
   const btn=document.getElementById('inq-btn');
   btn.disabled=true;btn.textContent='Sending...';
   const payload={
-    first_name:fname,
-    last_name:document.getElementById('i-lname').value.trim()||null,
-    email,company,
-    budget:document.getElementById('i-budget').value||null,
+    first_name:fname,last_name:document.getElementById('i-lname').value.trim()||null,
+    email,company,budget:document.getElementById('i-budget').value||null,
     partnership_type:document.getElementById('i-type').value||null,
     message:document.getElementById('i-message').value.trim()||null,
-    source:'advertise_form',status:'new',
-    created_at:new Date().toISOString()
+    source:'advertise_form',status:'new',created_at:new Date().toISOString()
   };
   try{
-    const res=await fetch(`${SUPABASE_URL}/rest/v1/cf_ad_inquiries`,{
+    const res=await fetch(`${SB_URL}/rest/v1/cf_ad_inquiries`,{
       method:'POST',
-      headers:{apikey:SUPABASE_KEY,Authorization:`Bearer ${SUPABASE_KEY}`,'Content-Type':'application/json','Prefer':'return=minimal'},
+      headers:{apikey:SB_KEY,Authorization:`Bearer ${SB_KEY}`,'Content-Type':'application/json','Prefer':'return=minimal'},
       body:JSON.stringify(payload)
     });
     if(res.ok||res.status===201){
       document.getElementById('inq-success').style.display='block';
       btn.style.display='none';
-    }else throw new Error('Failed');
+    }else throw new Error();
   }catch(e){
-    alert('Something went wrong. Please email us directly at hello@collectiblefind.co');
-    btn.disabled=false;btn.textContent='Send Partnership Inquiry →';
+    alert('Something went wrong. Please email us at hello@collectiblefind.co');
+    btn.disabled=false;btn.textContent='Send Campaign Inquiry →';
   }
 }
 </script>

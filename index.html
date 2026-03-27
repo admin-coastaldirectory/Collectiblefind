@@ -341,18 +341,57 @@ function render(){
   document.getElementById('cards-grid').innerHTML=list.map((l,i)=>cardHTML(l,i)).join('');
 }
 
+// ── PPC Click Tracking ───────────────────────────────────
+// Rates: website/eBay/Whatnot = $0.50 | socials = $0.25
+const PPC_RATES={social:0.25,web:0.50,ebay:0.50,whatnot:0.50};
+let ppcSession={total:0,clicks:[]};
+
+function getLinkType(url){
+  if(!url)return'social';
+  const u=url.toLowerCase();
+  if(u.includes('ebay'))return'ebay';
+  if(u.includes('whatnot'))return'whatnot';
+  if(u.includes('youtube')||u.includes('instagram')||u.includes('tiktok')||u.includes('twitter')||u.includes('linkedin'))return'social';
+  return'web';
+}
+
+async function trackClick(influencerId,influencerName,url,linkType){
+  // Broadcast to advertise page dashboard via localStorage
+  try{localStorage.setItem('cf_ppc_click',JSON.stringify({name:influencerName,url,linkType,rate:PPC_RATES[linkType]||0.25,ts:Date.now()}));}catch(e){}
+  const rate=PPC_RATES[linkType]||PPC_RATES.social;
+  ppcSession.total+=rate;
+  ppcSession.clicks.push({id:influencerId,name:influencerName,url,linkType,rate,ts:new Date().toISOString()});
+  // Store to Supabase cf_ad_clicks if table exists
+  try{
+    await fetch(`${SB_URL}/rest/v1/cf_ad_clicks`,{
+      method:'POST',
+      headers:{apikey:SB_KEY,Authorization:`Bearer ${SB_KEY}`,'Content-Type':'application/json','Prefer':'return=minimal'},
+      body:JSON.stringify({influencer_id:influencerId,influencer_name:influencerName,link_url:url,link_type:linkType,rate_usd:rate,created_at:new Date().toISOString()})
+    });
+  }catch(e){/* silent fail — table may not exist yet */}
+}
+
+function ppcClick(influencerId,influencerName,url,linkType){
+  trackClick(influencerId,influencerName,url,linkType);
+  window.open(url,'_blank');
+  return false;
+}
+
 function resolveLinks(l){
-  // Resolve platform links from both direct columns and links array
   const linkArr=l.links||[];
   const getLinkUrl=(arr,kw)=>{
     const match=arr.find(lk=>{const u=typeof lk==='string'?lk:(lk.url||'');return u.includes(kw);});
     return match?(typeof match==='string'?match:match.url):'';
   };
+  const whatnot=getLinkUrl(linkArr,'whatnot');
+  const ebay=getLinkUrl(linkArr,'ebay');
   return{
     yt:l.yt||getLinkUrl(linkArr,'youtube'),
     ig:l.ig||getLinkUrl(linkArr,'instagram'),
     tt:l.tt||getLinkUrl(linkArr,'tiktok'),
     web:l.web||getLinkUrl(linkArr,'http'),
+    whatnot,
+    ebay,
   };
 }
 
@@ -360,16 +399,26 @@ function cardHTML(l,i){
   const name=l.name||'Unknown';
   const initials=name.split(' ').map(w=>w[0]||'').join('').substring(0,2).toUpperCase()||'??';
   const color=COLORS[l.id%COLORS.length];
-  const {yt,ig,tt,web}=resolveLinks(l);
+  const {yt,ig,tt,web,whatnot,ebay}=resolveLinks(l);
+  const isFeatured=!!(l.featured);
+  // Website/eBay/Whatnot only show for featured creators
+  const showPremium=isFeatured;
   const primary=web||yt||ig||tt||'';
+  const id=l.id||0;
+  const safeName=name.replace(/'/g,"\'");
   const plats=[
-    yt?`<a href="${yt}" target="_blank" class="plat-btn plat-yt" title="YouTube">▶</a>`:'',
-    ig?`<a href="${ig}" target="_blank" class="plat-btn plat-ig" title="Instagram">📸</a>`:'',
-    tt?`<a href="${tt}" target="_blank" class="plat-btn plat-tk" title="TikTok">♪</a>`:'',
-    web?`<a href="${web}" target="_blank" class="plat-btn plat-web" title="Website">🌐</a>`:'',
+    yt?`<a href="#" onclick="return ppcClick(${id},'${safeName}','${yt}','social')" class="plat-btn plat-yt" title="YouTube">▶</a>`:'',
+    ig?`<a href="#" onclick="return ppcClick(${id},'${safeName}','${ig}','social')" class="plat-btn plat-ig" title="Instagram">📸</a>`:'',
+    tt?`<a href="#" onclick="return ppcClick(${id},'${safeName}','${tt}','social')" class="plat-btn plat-tk" title="TikTok">♪</a>`:'',
+    (showPremium&&whatnot)?`<a href="#" onclick="return ppcClick(${id},'${safeName}','${whatnot}','whatnot')" class="plat-btn plat-wn" title="Whatnot 🔴 LIVE">🔴</a>`:'',
+    (showPremium&&ebay)?`<a href="#" onclick="return ppcClick(${id},'${safeName}','${ebay}','ebay')" class="plat-btn plat-eb" title="eBay Store">🛒</a>`:'',
+    (showPremium&&web)?`<a href="#" onclick="return ppcClick(${id},'${safeName}','${web}','web')" class="plat-btn plat-web" title="Website">🌐</a>`:'',
+    (!showPremium&&web)?`<a href="#" onclick="return ppcClick(${id},'${safeName}','${web}','web')" class="plat-btn plat-web" title="Website">🌐</a>`:'',
   ].filter(Boolean).join('');
+  const visitUrl=primary;
+  const visitType=primary===web?'web':primary===ig?'social':primary===yt?'social':'social';
   return`<div class="card-wrapper" style="animation-delay:${i*.04}s">
-    ${l.featured?'<div class="featured-tag">⭐ Featured</div>':''}
+    ${isFeatured?'<div class="featured-tag">⭐ Featured</div>':''}
     <div class="card">
       <div class="card-header">
         <div class="avatar" style="background:${color}">${initials}</div>
@@ -383,7 +432,7 @@ function cardHTML(l,i){
       ${l.subs?`<div class="card-stats"><div class="cstat"><div class="cstat-val">${l.subs}</div><div class="cstat-lbl">Followers</div></div></div>`:''}
       ${plats?`<div class="platforms">${plats}</div>`:''}
       <div class="card-footer">
-        ${primary?`<a href="${primary}" target="_blank" class="btn-visit">Visit Channel ↗</a>`:'<span class="btn-visit-muted">No link available</span>'}
+        ${visitUrl?`<a href="#" onclick="return ppcClick(${id},'${safeName}','${visitUrl}','${visitType}')" class="btn-visit">Visit Channel ↗</a>`:'<span class="btn-visit-muted">No link available</span>'}
       </div>
     </div>
   </div>`;
