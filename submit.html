@@ -233,11 +233,14 @@ async function submitListing(){
     created_at:new Date().toISOString()
   };
   try{
+    // Submit to Supabase
     const res=await fetch(`${SUPABASE_URL}/rest/v1/cf_submissions`,{
       method:'POST',
       headers:{apikey:SUPABASE_KEY,Authorization:`Bearer ${SUPABASE_KEY}`,'Content-Type':'application/json','Prefer':'return=minimal'},
       body:JSON.stringify(payload)
     });
+    // Fire GHL webhook (non-blocking)
+    fetch('https://services.leadconnectorhq.com/hooks/DliJhcRhcYhqWczp3vEl/webhook-trigger/5f903ec0-a515-47b2-81cf-d18ef8b3b863',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}).catch(()=>{});
     if(res.ok||res.status===201){
       document.getElementById('submit-form-card').style.display='none';
       document.getElementById('success-box').style.display='block';

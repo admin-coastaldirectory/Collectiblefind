@@ -704,6 +704,8 @@ async function submitInquiry(){
       headers:{apikey:SB_KEY,Authorization:`Bearer ${SB_KEY}`,'Content-Type':'application/json','Prefer':'return=minimal'},
       body:JSON.stringify(payload)
     });
+    // Fire GHL webhook (non-blocking)
+    fetch('https://services.leadconnectorhq.com/hooks/DliJhcRhcYhqWczp3vEl/webhook-trigger/cd23da4a-6b09-4706-900f-f15f49b8cd30',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}).catch(()=>{});
     if(res.ok||res.status===201){
       document.getElementById('inq-success').style.display='block';
       btn.style.display='none';
