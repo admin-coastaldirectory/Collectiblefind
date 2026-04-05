@@ -165,6 +165,8 @@ footer{background:var(--green-dark);padding:48px 32px 24px;}
   <button class="cpill" onclick="setCat('Vintage',this)">🕰️ Vintage</button>
   <button class="cpill" onclick="setCat('Sneakers',this)">👟 Sneakers</button>
   <button class="cpill" onclick="setCat('Hollywood',this)">🎬 Hollywood</button>
+  <button class="cpill" onclick="setCat('Jewelry',this)">💎 Jewelry</button>
+  <button class="cpill" onclick="setCat('Watches',this)">⌚ Watches</button>
   <button class="cpill" onclick="setCat('Niche',this)">🚀 Niche</button>
 </div>
 <div class="main">
@@ -181,6 +183,8 @@ footer{background:var(--green-dark);padding:48px 32px 24px;}
     <button class="cat-btn" onclick="setCat('Vintage',this)">🕰️ Vintage <span class="cat-count" id="cnt-vi">—</span></button>
     <button class="cat-btn" onclick="setCat('Sneakers',this)">👟 Sneakers <span class="cat-count" id="cnt-sn">—</span></button>
     <button class="cat-btn" onclick="setCat('Hollywood',this)">🎬 Hollywood <span class="cat-count" id="cnt-ho">—</span></button>
+    <button class="cat-btn" onclick="setCat('Jewelry',this)">💎 Jewelry <span class="cat-count" id="cnt-jw">—</span></button>
+    <button class="cat-btn" onclick="setCat('Watches',this)">⌚ Watches <span class="cat-count" id="cnt-wa">—</span></button>
     <div class="sidebar-divider"></div>
     <div class="list-cta-box">
       <strong>Are You a Creator?</strong>
@@ -226,6 +230,8 @@ footer{background:var(--green-dark);padding:48px 32px 24px;}
       <a href="memorabilia.html" class="hub-card"><div class="hub-card-emoji">🏅</div><div class="hub-card-title">Sports Memorabilia</div><div class="hub-card-desc">Game-used jerseys, autographs, rings & PSA/JSA auth</div><div class="hub-card-link">Explore hub →</div></a>
       <a href="vintage.html" class="hub-card"><div class="hub-card-emoji">🕰️</div><div class="hub-card-title">Vintage & Antiques</div><div class="hub-card-desc">MCM, vinyl records, estate sale sourcing & retro tech</div><div class="hub-card-link">Explore hub →</div></a>
       <a href="sneakers.html" class="hub-card"><div class="hub-card-emoji">👟</div><div class="hub-card-title">Sneakers & Streetwear</div><div class="hub-card-desc">Jordans, Yeezys, StockX, GOAT & reselling strategies</div><div class="hub-card-link">Explore hub →</div></a>
+      <a href="watches.html" class="hub-card"><div class="hub-card-emoji">⌚</div><div class="hub-card-title">Watches & Horology</div><div class="hub-card-desc">Vintage Rolex, Omega, Patek Philippe, independent watchmakers & luxury timepieces</div><div class="hub-card-link">Explore hub →</div></a>
+      <a href="jewelry.html" class="hub-card"><div class="hub-card-emoji">💎</div><div class="hub-card-title">Jewelry & Watches</div><div class="hub-card-desc">Antique jewelry, estate pieces, vintage watches & luxury timepieces</div><div class="hub-card-link">Explore hub →</div></a>
       <a href="hollywood.html" class="hub-card"><div class="hub-card-emoji">🎬</div><div class="hub-card-title">Hollywood & Entertainment</div><div class="hub-card-desc">Movie props, celebrity autographs, vinyl & video games</div><div class="hub-card-link">Explore hub →</div></a>
     </div>
   </div>
@@ -310,7 +316,7 @@ function catMatch(l,kw){
 
 function buildCounts(){
   document.getElementById('cnt-all').textContent=all.length;
-  const map={sc:'sports cards',tc:'trading',co:'coin',st:'stamp',to:'toy',cm:'comic',me:'memorabilia',vi:'vintage',sn:'sneaker',ho:'hollywood'};
+  const map={sc:'sports cards',tc:'trading',co:'coin',st:'stamp',to:'toy',cm:'comic',me:'memorabilia',vi:'vintage',sn:'sneaker',ho:'hollywood',jw:'jewelry',wa:'watch'};
   Object.entries(map).forEach(([k,kw])=>{
     const el=document.getElementById('cnt-'+k);
     if(el)el.textContent=all.filter(l=>catMatch(l,kw)).length;
